@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu May 29 14:10:15 2025
+# Process ID: 103300
+# Current directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent97276 D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq_v1.1\Mini_ctrl_brd_zynq_v1.1.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.xpr
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1

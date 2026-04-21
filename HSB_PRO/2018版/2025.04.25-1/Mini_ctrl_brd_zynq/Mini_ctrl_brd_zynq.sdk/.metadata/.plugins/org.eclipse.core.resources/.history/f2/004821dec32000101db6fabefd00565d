@@ -1,0 +1,6 @@
+
+#include "Angle_Sensor.h"
+
+// 全局变量
+XUartPs UartPs;              // UART控制器实例
+XUartPs_Config *UartConfig;  // UART配置结构体

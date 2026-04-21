@@ -1,0 +1,8 @@
+12:13:33 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq_0 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+12:13:33 Build Finished (took 148ms)
+

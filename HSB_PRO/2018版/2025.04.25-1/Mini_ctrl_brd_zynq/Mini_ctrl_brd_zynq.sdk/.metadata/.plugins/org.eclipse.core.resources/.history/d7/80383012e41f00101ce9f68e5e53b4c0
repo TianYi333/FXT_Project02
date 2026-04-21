@@ -1,0 +1,63 @@
+#include "timer_intr.h"
+
+XScuGic Intc;//中断控制器驱动程序实例
+XScuTimer Timer;//定时器驱动程序实例
+volatile uint32_t usCount = 0;  // 微秒计数（volatile防止优化）
+
+
+/**** 中断服务程序 ****/
+void TimerIntrHandler(void *CallBackRef) {
+    XScuTimer *TimerPtr = (XScuTimer *)CallBackRef;
+    // 清除中断标志
+    XScuTimer_ClearInterruptStatus(TimerPtr);
+    // 微秒计数递增（根据自动重载周期）
+    usCount++;
+}
+
+/**** 初始化定时器 ****/
+int TimerInit(uint32_t usInterval) {
+    XScuTimer_Config *TimerConfig;
+    uint32_t timerFreq = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2; // CPU频率的1/2 ---私有定时器的时钟频率 = CPU 时钟频率/2 = 333MHz
+    uint32_t loadValue = (timerFreq / 1000000) * usInterval - 1;  // 计算加载值
+
+    // 查找定时器配置
+    TimerConfig = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+    if (!TimerConfig) return XST_FAILURE;
+
+    // 初始化定时器
+    if (XScuTimer_CfgInitialize(&TimerInstance, TimerConfig, TimerConfig->BaseAddr) != XST_SUCCESS)
+        return XST_FAILURE;
+
+    // 自检定时器
+    if (XScuTimer_SelfTest(&TimerInstance) != XST_SUCCESS)
+        return XST_FAILURE;
+
+    // 配置参数
+    XScuTimer_EnableAutoReload(&TimerInstance);  // 自动重载模式
+    XScuTimer_LoadTimer(&TimerInstance, loadValue); // 加载计数值
+    return XST_SUCCESS;
+}
+
+/**** 初始化中断控制器 ****/
+int InterruptInit() {
+    XScuGic_Config *GicConfig;
+
+    // 查找中断控制器配置
+    GicConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+    if (!GicConfig) return XST_FAILURE;
+
+    // 初始化中断控制器
+    if (XScuGic_CfgInitialize(&InterruptController, GicConfig, GicConfig->CpuBaseAddress) != XST_SUCCESS)
+        return XST_FAILURE;
+
+    // 注册中断处理程序
+    XScuGic_Connect(&InterruptController, TIMER_IRQ_ID,
+                   (Xil_ExceptionHandler)TimerIntrHandler, &TimerInstance);
+
+    // 启用定时器中断
+    XScuGic_Enable(&InterruptController, TIMER_IRQ_ID);
+    XScuTimer_EnableInterrupt(&TimerInstance);
+
+    return XST_SUCCESS;
+}
+

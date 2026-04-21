@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Jun 25 11:48:06 2025
+# Process ID: 134356
+# Current directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent58712 D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq_v1.1\Mini_ctrl_brd_zynq_v1.1.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.ipdefs/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2021/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/bd/system/system.bd}
+Reading block design file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_125M
+Adding component instance block -- xilinx.com:user:ps_pl_axi4:1.0 - ps_pl_axi4_0
+Adding component instance block -- xilinx.com:module_ref:TOP:1.0 - TOP_0
+Successfully read diagram <system> from block design file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/bd/system/system.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 25 14:18:51 2025...

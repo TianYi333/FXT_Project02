@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="398" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="490" key="DIALOG_HEIGHT"/>
+		<item value="448" key="DIALOG_X_ORIGIN"/>
+		<item value="373" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+		<item value="450" key="size.height"/>
+		<item value="351" key="location.y"/>
+		<item value="478" key="size.width"/>
+		<item value="1855" key="location.x"/>
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="UART1_CPU_1XCLKACT"/>
+			<item value="AM2302_GPIO_BANK"/>
+			<item value="timeouts_last_time"/>
+			<item value="configMAX_API_CALL_INTERRUPT_PRIORITY"/>
+			<item value="configUSE_TICKLESS_IDLE"/>
+			<item value="configMAX_SYSCALL_INTERRUPT_PRIORITY"/>
+			<item value="*初始化定时器1μs间隔*ifTimerInit1XST_SUCCESSxil_printfTimerinitializationfailed\n*初始化中断控制器*ifInterruptInitXST_SUCCESSxil_printfInterruptinitializationfailed\n"/>
+			<item value="configCPU_CLOCK_HZ"/>
+			<item value="Font_CN_16x16"/>
+			<item value="SSD1309_PAGES"/>
+			<item value="TickType_t"/>
+			<item value="vPortSetupTimerInterrupt"/>
+			<item value="SystemCoreClock"/>
+			<item value="miscC"/>
+			<item value="SysTick_CLKSourceConfig"/>
+			<item value="SystemClock_Config"/>
+			<item value="SysTickInit"/>
+			<item value="SysTick"/>
+			<item value="SysTick_Config"/>
+			<item value="complete_nw_thread"/>
+			<item value="vApplicationMallocFailedHook"/>
+		</list>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>

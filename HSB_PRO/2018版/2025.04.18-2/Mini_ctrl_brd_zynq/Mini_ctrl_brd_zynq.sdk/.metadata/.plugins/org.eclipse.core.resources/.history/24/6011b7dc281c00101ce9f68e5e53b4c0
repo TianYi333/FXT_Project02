@@ -1,0 +1,117 @@
+#include "ssd1309_spi.h"
+
+XGpioPs gpiops_inst; //PS 端 GPIO 驱动实例
+
+// 显存缓冲区（128x64像素，按页组织）
+static uint8_t screenBuffer[SSD1309_WIDTH][SSD1309_PAGES];
+
+// 设置GPIO引脚电平
+static void GPIO_Set(uint8_t pin, uint8_t level) {
+	XGpioPs_WritePin(&gpiops_inst, 1, (level << pin));
+}
+
+// 模拟SPI发送单字节（高位在前）
+static void SPI_SendByte(uint8_t byte) {
+    for (int i = 7; i >= 0; i--) {
+        GPIO_Set(PIN_CLK, 0);          // CLK拉低
+        GPIO_Set(PIN_DIN, (byte >> i) & 0x01);  // 设置数据位
+        usleep(1);                     // 保持时序（根据时钟速度调整）
+        GPIO_Set(PIN_CLK, 1);          // CLK上升沿锁存数据
+        usleep(1);
+    }
+}
+
+// 发送命令或数据
+static void SSD1309_Write(uint8_t isData, uint8_t byte) {
+    GPIO_Set(PIN_DC, isData);   // DC引脚：0=命令, 1=数据
+    GPIO_Set(PIN_CS, 0);        // CS拉低
+    SPI_SendByte(byte);
+    GPIO_Set(PIN_CS, 1);        // CS拉高
+}
+
+// 初始化GPIO和SPI
+void SPI_Init(void) {
+	gpiops_cfg_ptr = XGpioPs_LookupConfig(GPIOPS_ID);
+    XGpio_Initialize(&gpiops_inst, 0);  // 设备ID需与Vivado配置一致
+    XGpiops_SetDataDirection(&gpiops_inst, 1, 0x00);  // 所有引脚设为输出
+    GPIO_Set(PIN_RES, 1);        // 复位引脚初始化为高
+}
+
+// SSD1309初始化序列
+void SSD1309_Init(void) {
+    // 硬件复位
+    GPIO_Set(PIN_RES, 0);
+    usleep(10000);      // 保持低电平10ms
+    GPIO_Set(PIN_RES, 1);
+    usleep(10000);
+
+    // 发送初始化命令
+    SSD1309_Write(0, 0xAE);     // 关闭显示
+    SSD1309_Write(0, 0xD5);     // 设置时钟分频
+    SSD1309_Write(0, 0x80);     // 建议值0x80
+    SSD1309_Write(0, 0xA8);     // 设置复用率
+    SSD1309_Write(0, 0x3F);     // 高度-1=63
+    SSD1309_Write(0, 0xD3);     // 设置显示偏移
+    SSD1309_Write(0, 0x00);     // 偏移量0
+    SSD1309_Write(0, 0x40);     // 设置显示起始行
+    SSD1309_Write(0, 0x8D);     // 电荷泵设置
+    SSD1309_Write(0, 0x14);     // 启用电荷泵
+    SSD1309_Write(0, 0x20);     // 内存地址模式
+    SSD1309_Write(0, 0x00);     // 水平模式
+    SSD1309_Write(0, 0xA1);     // 段重映射列127->SEG0
+    SSD1309_Write(0, 0xC8);     // 行重映射COM63->COM0
+    SSD1309_Write(0, 0xDA);     // COM引脚配置
+    SSD1309_Write(0, 0x12);     // 备用COM引脚设置
+    SSD1309_Write(0, 0x81);     // 设置对比度
+    SSD1309_Write(0, 0xCF);     // 对比度值
+    SSD1309_Write(0, 0xD9);     // 预充电周期
+    SSD1309_Write(0, 0xF1);     // Phase1=1, Phase2=15
+    SSD1309_Write(0, 0xDB);     // VCOMH电压
+    SSD1309_Write(0, 0x40);     // VCOMH=0.83*VCC
+    SSD1309_Write(0, 0xA4);     // 显示内容不跟随RAM
+    SSD1309_Write(0, 0xA6);     // 正常显示（非反色）
+    SSD1309_Write(0, 0xAF);     // 开启显示
+}
+
+// 清空显存
+void SSD1309_Clear(void) {
+    for (int x = 0; x < SSD1309_WIDTH; x++) {
+        for (int page = 0; page < SSD1309_PAGES; page++) {
+            screenBuffer[x][page] = 0x00;
+        }
+    }
+}
+
+// 刷新屏幕（将显存内容发送到SSD1309）
+void SSD1309_Update(void) {
+    for (int page = 0; page < SSD1309_PAGES; page++) {
+        SSD1309_Write(0, 0xB0 + page);  // 设置页地址
+        SSD1309_Write(0, 0x00);         // 列地址低位
+        SSD1309_Write(0, 0x10);         // 列地址高位
+
+        for (int x = 0; x < SSD1309_WIDTH; x++) {
+            SSD1309_Write(1, screenBuffer[x][page]);  // 发送显存数据
+        }
+    }
+}
+
+// 绘制像素点（坐标从0开始）
+void SSD1309_DrawPixel(int x, int y, int color) {
+    if (x >= SSD1309_WIDTH || y >= SSD1309_HEIGHT) return;
+    int page = y / 8;
+    uint8_t bit = y % 8;
+    if (color) {
+        screenBuffer[x][page] |= (1 << bit);
+    } else {
+        screenBuffer[x][page] &= ~(1 << bit);
+    }
+}
+
+// 测试图案：绘制对角线
+void SSD1309_TestPattern(void) {
+    SSD1309_Clear();
+    for (int i = 0; i < SSD1309_WIDTH; i++) {
+        SSD1309_DrawPixel(i, i % SSD1309_HEIGHT, 1);
+    }
+    SSD1309_Update();
+}

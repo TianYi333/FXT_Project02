@@ -1,0 +1,212 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 84976
+License: Customer
+
+Current time: 	Wed May 07 09:05:56 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 28
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 422 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ASUS-PC
+User home directory: C:/Users/ASUS-PC
+User working directory: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/APP/Vivado-Xilinx/Xilinx/Vivado
+HDI_APPROOT: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/vivado.log
+Vivado journal file location: 	D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/vivado.jou
+Engine tmp dir: 	D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/.Xil/Vivado-84976-FXT333
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/APP/Vivado-Xilinx/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 750 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 107 MB (+109224kb) [00:00:02]
+// [Engine Memory]: 601 MB (+478214kb) [00:00:02]
+// Opening Vivado Project: D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 780 MB (+156716kb) [00:00:05]
+// [GUI Memory]: 113 MB (+1490kb) [00:00:06]
+// [Engine Memory]: 827 MB (+8463kb) [00:00:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,221 MB. GUI used memory: 59 MB. Current time: 5/7/25, 9:05:59 AM CST
+// [Engine Memory]: 1,221 MB (+369489kb) [00:00:07]
+// Project name: Mini_ctrl_brd_zynq; location: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0 Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0 Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Adding cell -- xilinx.com:user:pl_bram_rd:1.0 - pl_bram_rd_0 Successfully read diagram <system> from BD file <D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+dismissDialog("Open Block Design"); // bx (cp)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "pl_bram_rd_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:pl_bram_rd:1.0", 2, "pl_bram_rd_v1.0", 0, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "pl_bram_rd_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:pl_bram_rd:1.0", 2); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "pl_bram_rd_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:pl_bram_rd:1.0", 2, "pl_bram_rd_v1.0", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectButton("PAResourceAtoD.CustomizeCore_ADD_IP_TO_BLOCK_DESIGN_OR_CUSTOMIZE_Customize IP", "Customize IP"); // JButton (C, I)
+// r (cp): Customize IP: addNotify
+dismissDialog("Customize IP"); // r (cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "pl_bram_rd_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:pl_bram_rd:1.0", 2, "pl_bram_rd_v1.0", 0, false, false, false, false, true, false); // O (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cp): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (cp):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name pl_bram_rd_v1_0_project -directory D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'd:/asus-pc/desktop/temporary/test/mini_ctrl_brd_zynq/mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 121 MB (+2228kb) [00:00:42]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// [GUI Memory]: 135 MB (+8558kb) [00:00:42]
+// [GUI Memory]: 144 MB (+1434kb) [00:00:42]
+// 'i' command handler elapsed time: 3 seconds
+dismissDialog("Edit in IP Packager"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v), pl_bram_rd_v1_0_S00_AXI_inst : pl_bram_rd_v1_0_S00_AXI (pl_bram_rd_v1_0_S00_AXI.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v), pl_bram_rd_v1_0_S00_AXI_inst : pl_bram_rd_v1_0_S00_AXI (pl_bram_rd_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v), pl_bram_rd_v1_0_S00_AXI_inst : pl_bram_rd_v1_0_S00_AXI (pl_bram_rd_v1_0_S00_AXI.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v), pl_bram_rd_v1_0_S00_AXI_inst : pl_bram_rd_v1_0_S00_AXI (pl_bram_rd_v1_0_S00_AXI.v), u_bram_rd : bram_rd (bram_rd.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pl_bram_rd_v1_0 (pl_bram_rd_v1_0.v), pl_bram_rd_v1_0_S00_AXI_inst : pl_bram_rd_v1_0_S00_AXI (pl_bram_rd_v1_0_S00_AXI.v), u_bram_rd : bram_rd (bram_rd.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - pl_bram_rd", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+closeMainWindow("pl_bram_rd_v1_0_project - [d:/asus-pc/desktop/temporary/test/mini_ctrl_brd_zynq/mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project/pl_bram_rd_v1_0_project.xpr] - Vivado 2018.3"); // cp
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,221 MB. GUI used memory: 81 MB. Current time: 5/7/25, 9:07:08 AM CST
+// 'b' command handler elapsed time: 11 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // O (Q, cp)
+// Elapsed time: 69 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, cp)

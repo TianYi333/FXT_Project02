@@ -1,0 +1,1 @@
+div_gen_hex_2_dec.vhd,vhdl,xil_defaultlib,../../../../Mini_ctrl_brd_zynq_v1.1.gen/sources_1/ip/div_gen_hex_2_dec/sim/div_gen_hex_2_dec.vhd,

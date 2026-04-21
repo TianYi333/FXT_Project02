@@ -1,0 +1,39 @@
+#include "bram.h"
+
+char ch_data[1024]; //写入 BRAM 的字符数组
+int ch_data_len; //写入 BRAM 的字符个数
+
+void str_wr_bram();
+void str_rd_bram();
+
+//将字符串写入 BRAM
+void str_wr_bram()
+{
+	int i=0,wr_cnt = 0;
+	//每次循环向 BRAM 中写入 1 个字符
+	for(i = BRAM_DATA_BYTE*START_ADDR ; i < BRAM_DATA_BYTE*(START_ADDR + ch_data_len) ;
+			i += BRAM_DATA_BYTE){
+		XBram_WriteReg(XPAR_BRAM_0_BASEADDR,i,ch_data[wr_cnt]) ;
+		wr_cnt++;
+	}
+	//设置 BRAM 写入的字符串长度
+	PL_BRAM_RD_mWriteReg(PL_BRAM_BASE, PL_BRAM_LEN , BRAM_DATA_BYTE*ch_data_len) ;
+	//设置 BRAM 的起始地址
+	PL_BRAM_RD_mWriteReg(PL_BRAM_BASE, PL_BRAM_START_ADDR, BRAM_DATA_BYTE*START_ADDR) ;
+	//拉高 BRAM 开始信号
+	PL_BRAM_RD_mWriteReg(PL_BRAM_BASE, PL_BRAM_START , 1) ;
+	//拉低 BRAM 开始信号
+	PL_BRAM_RD_mWriteReg(PL_BRAM_BASE, PL_BRAM_START , 0) ;
+}
+
+//从 BRAM 中读出数据
+void str_rd_bram()
+{
+	int read_data=0,i=0;
+	//循环从 BRAM 中读出数据
+	for(i = BRAM_DATA_BYTE*START_ADDR ; i < BRAM_DATA_BYTE*(START_ADDR + ch_data_len) ;
+			i += BRAM_DATA_BYTE){
+		read_data = XBram_ReadReg(XPAR_BRAM_0_BASEADDR,i) ;
+		xil_printf("BRAM address is %d\t,Read data is %c\n",i/BRAM_DATA_BYTE ,read_data) ;
+	}
+}

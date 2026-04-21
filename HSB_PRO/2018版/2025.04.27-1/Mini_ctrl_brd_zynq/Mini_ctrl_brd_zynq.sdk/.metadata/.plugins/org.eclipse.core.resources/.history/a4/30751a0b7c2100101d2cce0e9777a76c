@@ -1,0 +1,45 @@
+#ifndef SRC_ANGLE_SENSOR_H_
+#define SRC_ANGLE_SENSOR_H_
+
+#include "main.h"
+#include <stdio.h>
+#include "xparameters.h"    // 硬件参数头文件
+#include "xuartps.h"        // Xilinx UART驱动库
+#include "xil_printf.h"     // 调试输出库
+
+// 全局变量
+extern XUartPs UartCtrl;            // UART控制器实例
+extern XScuGic IntcCtrl;           	// 中断控制器实例
+
+#ifndef XPAR_XUARTPS_1_DEVICE_ID
+#define XPAR_XUARTPS_1_DEVICE_ID    XPAR_PS7_UART_1_DEVICE_ID                   // 设备ID
+#define XPAR_XUARTPS_1_BASEADDR     0xE0001000          // 寄存器基地址
+#define XPAR_XUARTPS_1_HIGHADDR     0xE0001FFF			// 寄存器高地址
+#define XPAR_XUARTPS_1_UART_CLK_FREQ_HZ     100000000            // 时钟频率（需与Vivado配置一致）
+#define XPAR_XUARTPS_1_HAS_MODEM 0
+
+#define XPAR_PS7_UART_1_DEVICE_ID 1
+#define XPAR_PS7_UART_1_BASEADDR 0xE0001000
+#define XPAR_PS7_UART_1_HIGHADDR 0xE0001FFF
+#define XPAR_PS7_UART_1_UART_CLK_FREQ_HZ 100000000
+#define XPAR_PS7_UART_1_HAS_MODEM 0
+#endif
+
+#define UART_DEVICE_ID      XPAR_XUARTPS_1_DEVICE_ID  // UART1设备ID（对应EMIO）
+#define INTC_DEVICE_ID 		XPAR_SCUGIC_SINGLE_DEVICE_ID //中断 ID
+#define UART_INT_IRQ_ID 	XPAR_XUARTPS_1_INTR //串口中断 ID
+
+#define UART_BAUDRATE       115200                    // 波特率
+#define BUFFER_SIZE         33                        // 收发缓冲区大小
+#define RX_TRIGGER_LEVEL    11                          // FIFO触发阈值（建议4-8字节）
+
+extern volatile u8 rx_buffer[BUFFER_SIZE];  // 中断接收缓冲区
+extern volatile u32 rx_head;    // 缓冲区写入指针
+extern volatile u32 rx_tail;    // 缓冲区读取指针
+extern volatile u8 data_ready;  // 数据就绪标志
+
+void UART_IRQ_Handler(void *Instance);
+int UART_Init();
+int uart_Interrupt_Init();
+
+#endif /* SRC_ANGLE_SENSOR_H_ */

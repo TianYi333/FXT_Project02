@@ -1,0 +1,9 @@
+#ifndef SRC_ANGLE_SENSOR_H_
+#define SRC_ANGLE_SENSOR_H_
+
+#define UART_DEVICE_ID      XPAR_XUARTPS_1_DEVICE_ID  // UART1设备ID（对应EMIO）
+#define UART_BAUDRATE       115200                    // 波特率
+#define BUFFER_SIZE         64                        // 收发缓冲区大小
+
+
+#endif /* SRC_ANGLE_SENSOR_H_ */

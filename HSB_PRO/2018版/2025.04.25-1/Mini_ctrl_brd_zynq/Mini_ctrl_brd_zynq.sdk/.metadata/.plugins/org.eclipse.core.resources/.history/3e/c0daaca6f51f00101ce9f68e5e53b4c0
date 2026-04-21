@@ -1,0 +1,81 @@
+#include "timer_intr.h"
+
+/**** 全局变量 ****/
+XScuTimer TimerInstance;
+XScuGic InterruptController;
+static volatile uint32_t usElapsed = 0; // 累计微秒数
+static uint32_t timerFreq;              // 定时器实际频率
+static uint32_t loadValue;              // 自动重载值
+
+/*************** 中断服务程序（FreeRTOS兼容）***************/
+void TimerIntrHandler(void *CallBackRef) {
+    BaseType_t xHigherPriorityTaskWoken = FALSE;
+    XScuTimer *TimerPtr = (XScuTimer *)CallBackRef;
+
+    XScuTimer_ClearInterruptStatus(TimerPtr);
+    usElapsed += TIMER_INTERVAL_US;
+
+    // 发送通知给高精度延时任务
+    vTaskNotifyGiveFromISR(xTimerTaskHandle, &xHigherPriorityTaskWoken);
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+}
+
+// 微秒级精准延时（支持任务阻塞）
+void vRTOS_DelayUs(uint32_t us) {
+    uint32_t target = usElapsed + us;
+    while(usElapsed < target) {
+        ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(1)); // 最大等待1ms防止死锁
+    }
+}
+
+// 获取当前系统微秒时间戳
+uint32_t ulRTOS_GetUs(void) {
+    uint32_t currentCount, preciseUs;
+    taskENTER_CRITICAL();
+    currentCount = XScuTimer_GetCounterValue(&TimerInstance);
+    preciseUs = usElapsed + (loadValue - currentCount) * (1000000 / timerFreq);
+    taskEXIT_CRITICAL();
+    return preciseUs;
+}
+
+/*************** 硬件初始化（FreeRTOS适配）***************/
+int RTOS_TimerInit(void) {
+    XScuTimer_Config *TimerConfig;
+
+    // 计算定时器参数
+    uint32_t cpuFreq = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
+    timerFreq = cpuFreq / 2;
+    loadValue = (timerFreq / 1000000) * TIMER_INTERVAL_US - 1;
+
+    // 初始化硬件定时器
+    TimerConfig = XScuTimer_LookupConfig(TIMER_DEVICE_ID);
+    if (XScuTimer_CfgInitialize(&TimerInstance, TimerConfig, TimerConfig->BaseAddr) != XST_SUCCESS)
+        return pdFAIL;
+
+    XScuTimer_EnableAutoReload(&TimerInstance);
+    XScuTimer_LoadTimer(&TimerInstance, loadValue);
+    return pdPASS;
+}
+
+
+void RTOS_InterruptInit(void) {
+    XScuGic_Config *GicConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+    XScuGic_CfgInitialize(&InterruptController, GicConfig, GicConfig->CpuBaseAddress);
+
+    // 配置FreeRTOS兼容的中断优先级
+    XScuGic_SetPriorityTriggerType(&InterruptController, TIMER_IRQ_ID,
+                                  TIMER_INT_PRIORITY, 0x3);
+    XScuGic_Connect(&InterruptController, TIMER_IRQ_ID,
+                   (Xil_ExceptionHandler)TimerIntrHandler, &TimerInstance);
+
+    XScuGic_Enable(&InterruptController, TIMER_IRQ_ID);
+    XScuTimer_EnableInterrupt(&TimerInstance);
+
+    // 启用Xilinx异常处理
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                &InterruptController);
+    Xil_ExceptionEnable();
+}
+

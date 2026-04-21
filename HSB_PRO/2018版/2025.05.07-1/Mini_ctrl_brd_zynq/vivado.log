@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  7 09:05:49 2025
+# Process ID: 84976
+# Current directory: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent76568 D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr
+INFO: [Project 1-313] Project file moved from 'D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:user:pl_bram_rd:1.0 - pl_bram_rd_0
+Successfully read diagram <system> from BD file <D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd>
+ipx::edit_ip_in_project -upgrade true -name pl_bram_rd_v1_0_project -directory D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/asus-pc/desktop/temporary/test/mini_ctrl_brd_zynq/mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/src/bram_rd.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/hdl/pl_bram_rd_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/hdl/pl_bram_rd_v1_0.v:]
+update_compile_order -fileset sources_1
+close_project

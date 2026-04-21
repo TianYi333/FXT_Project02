@@ -1,0 +1,23 @@
+#ifndef SRC_AM2302_H_
+#define SRC_AM2302_H_
+
+#include "main.h"
+#include "xgpiops.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+#define EMIO1_PIN  		AM2302_1_SDA
+#define EMIO1_PIN_DIR 	DIR_AM2302_1	//DIR低电平，B->A;DIR高电平，A->B
+#define EMIO2_PIN  		AM2302_2_SDA
+#define EMIO2_PIN_DIR  	DIR_AM2302_2	//DIR低电平，B->A;DIR高电平，A->B
+#define EMIO3_PIN  		AM2302_3_SDA
+#define EMIO3_PIN_DIR  	DIR_AM2302_3	//DIR低电平，B->A;DIR高电平，A->B
+
+#define DHT_CHECKSUM_ERROR  -1
+#define DHT_TIMEOUT_ERROR   -2
+
+int Gpio_Init();
+int ReadBit();
+int ReadData(uint8_t *data);
+#endif /* SRC_AM2302_H_ */

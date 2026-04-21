@@ -1,0 +1,15 @@
+09:54:34 **** Auto Build of configuration Debug for project uart_bsp_xuartps_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xuartps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_intr_example.d" -MT"src/xuartps_intr_example.o" -o "src/xuartps_intr_example.o" "../src/xuartps_intr_example.c"
+../src/xuartps_intr_example.c:62:10: fatal error: xparameters.h: No such file or directory
+ #include "xparameters.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/xuartps_intr_example.o] Error 1
+
+09:54:35 Build Finished (took 190ms)
+

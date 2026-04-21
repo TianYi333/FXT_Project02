@@ -1,0 +1,960 @@
+!SESSION 2025-04-16 10:02:09.012 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk
+
+This is a continuation of log file D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\.metadata\.bak_3.log
+Created Time: 2025-04-18 09:58:56.693
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:56.693
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:56.707
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:56.708
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:59.029
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:59.831
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:58:59.833
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.030
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.035
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.035
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.038
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.2",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.038
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:02.039
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:05.257
+!MESSAGE XSCT Command: [disconnect tcfchan#71], Thread: Thread-6826
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:05.260
+!MESSAGE XSCT command with result: [disconnect tcfchan#71], Result: [null, ]. Thread: Thread-6826
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-18 09:59:06.268
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.268
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.272
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#72]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.272
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.281
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.285
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.285
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.292
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.311
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.311
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.330
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.331
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.332
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#72]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.332
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.336
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.337
+!MESSAGE XSCT Command: [version -server], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.337
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.337
+!MESSAGE XSCT Command: [version], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.338
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.338
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.351
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.351
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.356
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.357
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.364
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.364
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.368
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.369
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.380
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.380
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.383
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.383
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.397
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.397
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.400
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.400
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.412
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.413
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.415
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.416
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.428
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.429
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.442
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.442
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.452
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.452
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.454
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.454
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.471
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.471
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.475
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_18]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.475
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.476
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.476
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.492
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.493
+!MESSAGE XSCT Command: [stop], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.543
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.543
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.740
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.741
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.743
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.743
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.758
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.758
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.833
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.834
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.844
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:06.844
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.332
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.332
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.344
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.359
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.372
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.373
+!MESSAGE XSCT Command: [con], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 09:59:07.390
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:12.926
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:12.928
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.176
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.178
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.178
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.179
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#72]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.183
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.184
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.188
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.188
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.200
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.200
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.214
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:14.214
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:16.544
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:17.344
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:17.346
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.668
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.673
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.673
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.675
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.2",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.676
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:25.677
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:29.104
+!MESSAGE XSCT Command: [disconnect tcfchan#72], Thread: Thread-6889
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:29.107
+!MESSAGE XSCT command with result: [disconnect tcfchan#72], Result: [null, ]. Thread: Thread-6889
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-18 10:00:30.116
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.116
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.119
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#73]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.119
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.125
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.125
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.130
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.130
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.143
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.143
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.169
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.169
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.192
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.193
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.194
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#73]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.194
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.197
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.197
+!MESSAGE XSCT Command: [version -server], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.198
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.198
+!MESSAGE XSCT Command: [version], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.198
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.198
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.201
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.201
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.210
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.211
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.214
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.214
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.226
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.226
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.229
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.238
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.238
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.243
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.254
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.259
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.259
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.271
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.271
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.275
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.275
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.288
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.288
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.301
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.301
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.302
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.302
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.304
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.304
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.313
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.314
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.316
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_18]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.316
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.317
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.317
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.326
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.326
+!MESSAGE XSCT Command: [stop], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.360
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.361
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.603
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.603
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.617
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.618
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.635
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.635
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.708
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.708
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.725
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:30.725
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.182
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.183
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.188
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.223
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.238
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.239
+!MESSAGE XSCT Command: [con], Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:00:31.255
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-122
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:41.670
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:41.673
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.581
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.583
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.584
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.586
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#73]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.586
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.589
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.589
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.592
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.592
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.605
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.605
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.634
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:42.635
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:44.982
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:45.792
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:45.794
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.774
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.780
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.780
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.781
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.2",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.781
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:47.782
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:50.988
+!MESSAGE XSCT Command: [disconnect tcfchan#73], Thread: Thread-6952
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:50.990
+!MESSAGE XSCT command with result: [disconnect tcfchan#73], Result: [null, ]. Thread: Thread-6952
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-04-18 10:01:51.994
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:51.994
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:51.998
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#74]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:51.998
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.004
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.004
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.007
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.007
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.017
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.017
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.042
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0} -index 1], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.042
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.043
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.044
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.044
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#74]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.045
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.049
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.049
+!MESSAGE XSCT Command: [version -server], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.050
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.050
+!MESSAGE XSCT Command: [version], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.050
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.050
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.053
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.053
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.065
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.071
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.071
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.078
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.078
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.081
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.081
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.089
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.089
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.093
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.093
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.106
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.107
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.110
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.111
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.122
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.123
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.126
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   4* Digilent Zed 210248764166]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.126
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.139
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      5  arm_dap (idcode 4ba00477 irlen 4)
+     6  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.139
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.152
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.153
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.153
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.154
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.155
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.155
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.167
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.168
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.170
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper_18]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.170
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.171
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.171
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.187
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.188
+!MESSAGE XSCT Command: [stop], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.264
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.266
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.461
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.462
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.465
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.466
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.482
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.482
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.554
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.554
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.570
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:52.570
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.012
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.012
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.013
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.063
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.079
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248764166"} -index 0], Result: [null, ]. Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.080
+!MESSAGE XSCT Command: [con], Thread: Worker-123
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-04-18 10:01:53.095
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-123

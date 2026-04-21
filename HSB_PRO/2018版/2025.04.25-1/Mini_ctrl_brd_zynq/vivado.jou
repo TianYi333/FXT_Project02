@@ -1,0 +1,222 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 18 09:25:01 2025
+# Process ID: 36768
+# Current directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent45048 D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {33}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 28 system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+wait_on_run system_processing_system7_0_0_synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {32}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { [ delete_ip_run [get_ips -all system_processing_system7_0_0] ] }
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+close_design
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]
+endgroup
+undo
+close_bd_design [get_bd_designs system]
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} CONFIG.PCW_UART1_UART1_IO {EMIO}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK0_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 28 system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+startgroup
+set_property package_pin "" [get_ports [list  {GPIO_0_0_tri_io[13]}]]
+place_ports UART_1_0_rxd M15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {GPIO_0_0_tri_io[14]}]]
+place_ports UART_1_0_txd K16
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list UART_1_0_rxd]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list UART_1_0_txd]]
+startgroup
+set_property package_pin "" [get_ports [list  UART_1_0_txd]]
+place_ports UART_1_0_rxd K16
+endgroup
+place_ports UART_1_0_txd M15
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK0_PORT {0}] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+endgroup
+save_bd_design
+validate_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 28 system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_bd_design [get_bd_designs system]
+wait_on_run system_processing_system7_0_0_synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+close_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+close_design
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+validate_bd_design -force
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+set_property package_pin "" [get_ports [list  {GPIO_0_0_tri_io[14]}]]
+set_property package_pin "" [get_ports [list  {GPIO_0_0_tri_io[14]}]]
+set_property package_pin "" [get_ports [list  {GPIO_0_0_tri_io[14]}]]
+place_ports {GPIO_0_0_tri_io[14]} A20
+place_ports {GPIO_0_0_tri_io[13]} L20
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+make_wrapper -files [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -top
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+close_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_ports FCLK_CLK0_0]
+save_bd_design
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -top
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -top
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+validate_bd_design -force
+generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -directory D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/sim_scripts -ip_user_files_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files -ipstatic_source_dir D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/modelsim} {questa=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/questa} {riviera=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/riviera} {activehdl=D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk -hwspec D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}

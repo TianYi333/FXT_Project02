@@ -1,0 +1,51 @@
+15:46:23 **** Build of configuration Debug for project FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.o" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.o" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:137:0:
+../../FSBL_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.o" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.o" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.o" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -I"D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-2-整体修改板及支持包\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\system_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.o" -o "src/pcap.o" "../src/pcap.c"
+In file included from ../src/pcap.c:100:0:
+../../FSBL_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/pcap.c'
+' '
+make: *** No rule to make target 'D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper_hw_platform_0/ps7_init.c', needed by 'src/ps7_init.o'.  Stop.
+
+15:46:24 Build Finished (took 1s.54ms)
+

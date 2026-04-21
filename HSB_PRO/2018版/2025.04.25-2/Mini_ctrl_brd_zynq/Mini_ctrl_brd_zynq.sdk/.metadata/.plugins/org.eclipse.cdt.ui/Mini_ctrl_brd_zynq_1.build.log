@@ -1,0 +1,81 @@
+15:48:25 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Angle_Sensor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Angle_Sensor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Angle_Sensor.d" -MT"src/Angle_Sensor.o" -o "src/Angle_Sensor.o" "../src/Angle_Sensor.c"
+'Finished building: ../src/Angle_Sensor.c'
+' '
+'Building file: ../src/am2302.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/am2302.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/am2302.d" -MT"src/am2302.o" -o "src/am2302.o" "../src/am2302.c"
+'Finished building: ../src/am2302.c'
+' '
+'Building file: ../src/freertos_tcp_perf_server.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_tcp_perf_server.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_tcp_perf_server.d" -MT"src/freertos_tcp_perf_server.o" -o "src/freertos_tcp_perf_server.o" "../src/freertos_tcp_perf_server.c"
+../src/freertos_tcp_perf_server.c: In function 'tcp_recv_perf_traffic':
+../src/freertos_tcp_perf_server.c:45:23: warning: implicit declaration of function 'write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+    if ((write_bytes = write(sock, Lwip_send_buf, 20)) < 0) {
+                       ^~~~~
+                       fwrite
+../src/freertos_tcp_perf_server.c:53:21: warning: implicit declaration of function 'lwip_recvfrom' [-Wimplicit-function-declaration]
+   if ((read_bytes = lwip_recvfrom(sock, recv_buf, RECV_BUF_SIZE,
+                     ^~~~~~~~~~~~~
+../src/freertos_tcp_perf_server.c:77:2: warning: implicit declaration of function 'close'; did you mean 'pclose'? [-Wimplicit-function-declaration]
+  close(sock);
+  ^~~~~
+  pclose
+../src/freertos_tcp_perf_server.c: In function 'start_application':
+../src/freertos_tcp_perf_server.c:87:21: error: storage size of 'address' isn't known
+  struct sockaddr_in address, remote;
+                     ^~~~~~~
+../src/freertos_tcp_perf_server.c:87:30: error: storage size of 'remote' isn't known
+  struct sockaddr_in address, remote;
+                              ^~~~~~
+../src/freertos_tcp_perf_server.c:102:14: warning: implicit declaration of function 'lwip_socket'; did you mean 'lwip_init'? [-Wimplicit-function-declaration]
+  if ((sock = lwip_socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+              ^~~~~~~~~~~
+              lwip_init
+../src/freertos_tcp_perf_server.c:102:26: error: 'AF_INET' undeclared (first use in this function); did you mean 'TF_INFR'?
+  if ((sock = lwip_socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+                          ^~~~~~~
+                          TF_INFR
+../src/freertos_tcp_perf_server.c:102:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/freertos_tcp_perf_server.c:102:35: error: 'SOCK_STREAM' undeclared (first use in this function)
+  if ((sock = lwip_socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+                                   ^~~~~~~~~~~
+../src/freertos_tcp_perf_server.c:111:6: warning: implicit declaration of function 'bind'; did you mean 'rand'? [-Wimplicit-function-declaration]
+  if (bind(sock, (struct sockaddr *)&address, sizeof (address)) < 0) {
+      ^~~~
+      rand
+../src/freertos_tcp_perf_server.c:118:6: warning: implicit declaration of function 'listen'; did you mean 'system'? [-Wimplicit-function-declaration]
+  if (listen(sock, 1) < 0) {
+      ^~~~~~
+      system
+../src/freertos_tcp_perf_server.c:127:17: warning: implicit declaration of function 'accept' [-Wimplicit-function-declaration]
+   if ((new_sd = accept(sock, (struct sockaddr *)&remote,
+                 ^~~~~~
+../src/freertos_tcp_perf_server.c:128:8: error: 'socklen_t' undeclared (first use in this function)
+       (socklen_t *)&size)) > 0)
+        ^~~~~~~~~
+../src/freertos_tcp_perf_server.c:128:19: error: expected expression before ')' token
+       (socklen_t *)&size)) > 0)
+                   ^
+../src/freertos_tcp_perf_server.c:89:6: warning: variable 'size' set but not used [-Wunused-but-set-variable]
+  int size;
+      ^~~~
+../src/freertos_tcp_perf_server.c:87:30: warning: unused variable 'remote' [-Wunused-variable]
+  struct sockaddr_in address, remote;
+                              ^~~~~~
+../src/freertos_tcp_perf_server.c:87:21: warning: unused variable 'address' [-Wunused-variable]
+  struct sockaddr_in address, remote;
+                     ^~~~~~~
+../src/freertos_tcp_perf_server.c:83:12: warning: variable 'new_sd' set but not used [-Wunused-but-set-variable]
+  int sock, new_sd;
+            ^~~~~~
+make: *** [src/subdir.mk:44: src/freertos_tcp_perf_server.o] Error 1
+
+15:48:25 Build Finished (took 574ms)
+

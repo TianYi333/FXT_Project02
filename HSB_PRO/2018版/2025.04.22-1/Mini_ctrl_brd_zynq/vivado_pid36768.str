@@ -1,0 +1,2103 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 36768
+License: Customer
+
+Current time: 	Fri Apr 18 09:25:08 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 28
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 422 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ASUS-PC
+User home directory: C:/Users/ASUS-PC
+User working directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/APP/Vivado-Xilinx/Xilinx/Vivado
+HDI_APPROOT: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/vivado.log
+Vivado journal file location: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/vivado.jou
+Engine tmp dir: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/.Xil/Vivado-36768-FXT333
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/APP/Vivado-Xilinx/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 782 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 69 MB (+70275kb) [00:00:02]
+// [Engine Memory]: 613 MB (+491633kb) [00:00:02]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 91 MB (+18819kb) [00:00:04]
+// [Engine Memory]: 766 MB (+127902kb) [00:00:04]
+// [GUI Memory]: 101 MB (+5943kb) [00:00:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  1179 ms.
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'. 
+// Project name: Mini_ctrl_brd_zynq; location: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 792 MB. GUI used memory: 52 MB. Current time: 4/18/25, 9:25:10 AM CST
+// [Engine Memory]: 806 MB (+1466kb) [00:00:07]
+// [Engine Memory]: 854 MB (+8284kb) [00:00:08]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Successfully read diagram <system> from BD file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bx (cp)
+// [Engine Memory]: 909 MB (+12465kb) [00:00:11]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 109 MB (+2988kb) [00:00:11]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// [Engine Memory]: 999 MB (+47200kb) [00:00:16]
+dismissDialog("Re-customize IP"); // O (cp)
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (Q, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (Q, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 119 MB (+4520kb) [00:00:22]
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 129 MB (+4456kb) [00:00:22]
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.srcs\sources_1\bd\system\system.bd>  Wrote  : <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// Tcl Message: Exporting to file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/synth/system.hwdef 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// [GUI Memory]: 136 MB (+593kb) [00:00:43]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 13 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg400-2 Top: system_wrapper 
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 79 MB. Current time: 4/18/25, 9:26:15 AM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,320 MB. GUI used memory: 78 MB. Current time: 4/18/25, 9:26:16 AM CST
+// [Engine Memory]: 1,328 MB (+292915kb) [00:01:13]
+// [Engine Memory]: 1,439 MB (+46043kb) [00:01:13]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// [GUI Memory]: 143 MB (+220kb) [00:01:14]
+// DeviceView Instantiated
+// [GUI Memory]: 155 MB (+5068kb) [00:01:14]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.906 . Memory (MB): peak = 1020.992 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v:12] INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (4#1) [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v:12] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1062.570 ; gain = 41.578 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1062.570 ; gain = 41.578 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1062.570 ; gain = 41.578 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0' INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z020clg400-2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst' Finished Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst' Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc] 
+// Tcl Message: Finished Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc] 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.953 ; gain = 0.000 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.953 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 7 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 7 instances  
+// Tcl Message: INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1506.074 ; gain = 485.082 
+// Tcl Message: 17 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1506.074 ; gain = 485.082 
+// [GUI Memory]: 170 MB (+7759kb) [00:01:15]
+// 'dQ' command handler elapsed time: 21 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_tri_io (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4); // z (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 16 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 28 
+// Tcl Message: [Fri Apr 18 09:26:50 2025] Launched synth_1... Run output will be captured here: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/synth_1/runme.log [Fri Apr 18 09:26:50 2025] Launched impl_1... Run output will be captured here: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 23 seconds
+closeFrame(PAResourceOtoP.PAViews_IO_PORTS, "I/O Ports"); // ax (aI, cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Package Pins", 5); // aI (aF, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 1604, -735); // B (C, cp)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 203, 59, 585, 922); // A (k, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+// Device view-level: 0.0
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package", 0); // k (j, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 2343, -405, false, false, false, true, false); // B (C, cp) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 299, 101, 585, 922); // A (k, cp)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 299, 101, 585, 922, false, false, false, true, false); // A (k, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PAGraphicalView_VIEW, "View"); // ac (al, cp)
+selectButton((HResource) null, "Package_settings"); // u (f, cp): TRUE
+selectButton((HResource) null, "Package_settings"); // u (f, cp): FALSE
+selectButton(RDIResource.QuickHelp_HELP, (String) null); // k (aA, cp)
+selectButton(RDIResource.QuickHelp_HELP, (String) null); // k (aA, cp)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 1,518 MB (+7310kb) [00:02:52]
+// ah (cp): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,518 MB. GUI used memory: 107 MB. Current time: 4/18/25, 9:28:00 AM CST
+// Engine heap size: 1,518 MB. GUI used memory: 108 MB. Current time: 4/18/25, 9:28:00 AM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,866 MB. GUI used memory: 84 MB. Current time: 4/18/25, 9:28:05 AM CST
+// [Engine Memory]: 1,866 MB (+285394kb) [00:03:02]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1902.426 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1902.426 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1902.426 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 7 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 7 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1970.176 ; gain = 442.801 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 9 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// [Engine Memory]: 1,964 MB (+5570kb) [00:03:03]
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // bg (f, cp)
+// Package: addNotify
+// [GUI Memory]: 180 MB (+762kb) [00:03:08]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_tri_io (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4); // z (Q, cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Navigator.xdc]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Navigator.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (7) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, (String) null, 3, true); // z (Q, cp) - Node
+selectTab((HResource) null, (HResource) null, "Clock Regions", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "I/O Port Interface Properties", 0); // aI (aF, cp)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bx (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// [GUI Memory]: 189 MB (+833kb) [00:04:13]
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // O (cp)
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,027 MB. GUI used memory: 140 MB. Current time: 4/18/25, 9:29:20 AM CST
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (Q, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (Q, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "EMIO GPIO (Width) ; 32 ;  ;  ;  ;  ;  ; ", 18, "32", 1, false); // aW (Q, r)
+selectComboBox("PCW GPIO EMIO GPIO IO (PCW_GPIO_EMIO_GPIO_IO)", "33", 32); // E (aW, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {33}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {33}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.srcs\sources_1\bd\system\system.bd>  
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// Tcl Message: Wrote  : <D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.srcs\sources_1\bd\system\system.bd>  VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/synth/system.v VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/sim/system.v VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v 
+// [Engine Memory]: 2,105 MB (+44935kb) [00:04:35]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// Tcl Message: Exporting to file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/synth/system.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2129.660 ; gain = 45.949 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 28 system_processing_system7_0_0_synth_1 
+// Tcl Message: [Fri Apr 18 09:29:39 2025] Launched system_processing_system7_0_0_synth_1... Run output will be captured here: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/system_processing_system7_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// 'bn' command handler elapsed time: 11 seconds
+// Elapsed time: 10 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: wait_on_run system_processing_system7_0_0_synth_1 
+// Tcl Message: [Fri Apr 18 09:29:46 2025] Waiting for system_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Fri Apr 18 09:29:51 2025] Waiting for system_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Fri Apr 18 09:29:56 2025] Waiting for system_processing_system7_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Fri Apr 18 09:30:01 2025] Waiting for system_processing_system7_0_0_synth_1 to finish... 
+// Tcl Message: [Fri Apr 18 09:30:01 2025] system_processing_system7_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2131.914 ; gain = 1.348 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z020clg400-2 Top: system_wrapper 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,174 MB. GUI used memory: 140 MB. Current time: 4/18/25, 9:30:03 AM CST
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,240 MB (+30968kb) [00:05:00]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// [GUI Memory]: 200 MB (+1043kb) [00:05:00]
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.898 . Memory (MB): peak = 2131.914 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v:12] INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2154.289 ; gain = 22.375 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2154.289 ; gain = 22.375 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2154.289 ; gain = 22.375 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0' INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2208.246 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 33 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 33 instances  
+// Tcl Message: INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2269.301 ; gain = 137.387 
+// Tcl Message: 16 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// 'dQ' command handler elapsed time: 19 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (33) ; INOUT ;  ;  ;  ; (Multiple) ; (Multiple) ; (Multiple) ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+// [GUI Memory]: 210 MB (+51kb) [00:05:04]
+// [GUI Memory]: 221 MB (+997kb) [00:05:06]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_tri_io (33) ; INOUT ;  ;  ;  ; (Multiple) ; (Multiple) ; (Multiple) ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4); // z (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bx (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (Q, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16, "GPIO", 0, true); // aW (Q, r) - Node
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (Q, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "EMIO GPIO (Width) ; 33 ;  ;  ;  ;  ;  ; ", 18, "33", 1, false); // aW (Q, r)
+selectComboBox("PCW GPIO EMIO GPIO IO (PCW_GPIO_EMIO_GPIO_IO)", "32", 31); // E (aW, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {32}] [get_bd_cells processing_system7_0]'
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {32}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 238 MB (+6085kb) [00:05:25]
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.srcs\sources_1\bd\system\system.bd>  
+// HMemoryUtils.trashcanNow. Engine heap size: 2,312 MB. GUI used memory: 181 MB. Current time: 4/18/25, 9:30:30 AM CST
+// [Engine Memory]: 2,354 MB (+1666kb) [00:05:27]
+// Elapsed time: 16 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_SEARCH, "System_RSB_SYSTEM_TREE_POPUP"); // B (f, cp)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design 
+selectButton("PAResourceTtoZ.ValidateRSBDesign_VALIDATION_SUCCESSFUL_THERE_NO_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cp): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Wrote  : <D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.srcs\sources_1\bd\system\system.bd>  VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/synth/system.v VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/sim/system.v VHDL Output written to : D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,425 MB. GUI used memory: 180 MB. Current time: 4/18/25, 9:30:55 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// Tcl Message: Exporting to file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/synth/system.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2440.531 ; gain = 63.723 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_processing_system7_0_0, cache-ID = 4462140ec5b1b8cc; cache size = 3.942 MB. 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: catch { [ delete_ip_run [get_ips -all system_processing_system7_0_0] ] } 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'bn' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Managing Output Products"); // bx (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 180 MB. Current time: 4/18/25, 9:31:28 AM CST
+// Engine heap size: 2,440 MB. GUI used memory: 180 MB. Current time: 4/18/25, 9:31:28 AM CST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.904 . Memory (MB): peak = 2445.520 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/hdl/system_wrapper.v:12] INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2445.520 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2445.520 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2445.520 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0' 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst' 
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 175 MB. Current time: 4/18/25, 9:31:29 AM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Finished Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst' Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc] Finished Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+dismissDialog("Reloading"); // bx (cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (32) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_tri_io (32) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4); // z (Q, cp)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_tri_io (32) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4); // z (Q, cp)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "GPIO_0_0_12642 (32) ; INOUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (Q, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 2493, -546); // B (C, cp)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 317, 82, 585, 922); // A (k, cp)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (0) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (0)", 0, false); // z (Q, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 716, 4911); // B (C, cp)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 91, 776, 585, 922); // A (k, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_RTL_DESIGN, "Close"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_RTL_DESIGN
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Design : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 180 MB. Current time: 4/18/25, 9:31:49 AM CST
+// Engine heap size: 2,440 MB. GUI used memory: 180 MB. Current time: 4/18/25, 9:31:49 AM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'a' command handler elapsed time: 3 seconds
+dismissDialog("Close Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 28 
+// Tcl Message: [Fri Apr 18 09:31:54 2025] Launched synth_1... Run output will be captured here: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/synth_1/runme.log [Fri Apr 18 09:31:54 2025] Launched impl_1... Run output will be captured here: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/runme.log 
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cQ, cp)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 144 MB. Current time: 4/18/25, 9:32:09 AM CST
+// Engine heap size: 2,440 MB. GUI used memory: 145 MB. Current time: 4/18/25, 9:32:09 AM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (cp):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 88 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (cp): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cp)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Navigator.xdc]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Navigator.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("Navigator.xdc", 496, 420); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cp): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Export Hardware"); // X (cp)
+// Tcl Message: file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf  
+// Elapsed time: 169 seconds
+selectCodeEditor("Navigator.xdc", 182, 46); // cl (w, cp)
+selectCodeEditor("Navigator.xdc", 182, 24); // cl (w, cp)
+selectCodeEditor("Navigator.xdc", 181, 7); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("Navigator.xdc", 162, 293); // cl (w, cp)
+// Elapsed time: 229 seconds
+selectCodeEditor("Navigator.xdc", 183, 449); // cl (w, cp)
+// Elapsed time: 264 seconds
+selectCodeEditor("Navigator.xdc", 181, 584); // cl (w, cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("Navigator.xdc", 184, 673); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 143 MB. Current time: 4/18/25, 10:02:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 135 MB. Current time: 4/18/25, 10:32:12 AM CST
+// Elapsed time: 4354 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bx (cp)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (Q, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16, "GPIO", 0, true); // aW (Q, r) - Node
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (Q, r)
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A (Q, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // A (Q, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // A (Q, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 9); // A (Q, r)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 9, "PL Fabric Clocks", 0, true); // A (Q, r) - Node
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 9); // A (Q, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks", 10); // A (Q, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks", 10); // A (Q, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Timers ; Timers ; Timers ; Timers ; Timers ; Timers", 11); // A (Q, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "TTC1 ; TTC1 ; TTC1 ; TTC1 ; TTC1 ; TTC1", 14); // A (Q, r)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "TTC1 ; TTC1 ; TTC1 ; TTC1 ; TTC1 ; TTC1", 14, "TTC1", 0, true, false, false, false, false, true); // A (Q, r) - Double Click - Node
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "TTC0 ; TTC0 ; TTC0 ; TTC0 ; TTC0 ; TTC0", 13); // A (Q, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "TTC0 ; TTC0 ; TTC0 ; TTC0 ; TTC0 ; TTC0", 13); // A (Q, r)
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // r (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 152 MB. Current time: 4/18/25, 11:02:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 153 MB. Current time: 4/18/25, 11:32:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 152 MB. Current time: 4/18/25, 12:02:22 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2076 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4115 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5326 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 590 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7836 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1820 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1205 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6150 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3494 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2076 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2278 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2820 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6819 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7231 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1536 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4867 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2829 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1593 ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5026 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3899 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5395 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6282 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8152 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2381 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5664 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16856 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1363 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4046 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3120 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1878 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4993 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1243 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6309 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8121 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6385 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8891 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1577 ms. Increasing delay to 4731 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1960 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5931 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4985 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1822 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7282 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4591 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5459 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1554 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5533 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2589 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12456 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5236 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 151 MB. Current time: 4/18/25, 12:32:35 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1361 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2668 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3265 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1890 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3529 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1596 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1606 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1256 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1969 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3038 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4470 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11488 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5085 ms. Increasing delay to 15255 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5090 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2 ms. Decreasing delay to 2002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1236 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1451 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2765 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7328 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3971 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1945 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8267 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2081 ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3841 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2700 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2040 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1210 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1289 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5959 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4303 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1734 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1743 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4362 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6522 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1564 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5922 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3021 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1785 ms. Increasing delay to 5355 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7481 ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1288 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2571 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1753 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3466 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4850 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 151 MB. Current time: 4/18/25, 1:02:57 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  7451 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1567 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3639 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3385 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2459 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6399 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13571 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4782 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3618 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3971 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7660 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3237 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1758 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6545 ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1246 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5859 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3444 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1870 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5564 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13355 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5375 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1199 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1941 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5696 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4290 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3456 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3259 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5808 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1012 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5710 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 151 MB. Current time: 4/18/25, 1:32:39 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4361 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7433 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8679 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3531 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6053 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12377 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7376 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6574 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6117 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3373 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1587 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6799 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2406 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3476 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3173 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2794 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5766 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3252 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2270 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1407 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5666 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2788 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2519 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5625 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1753 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3801 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11876 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1520 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3403 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4449 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4483 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3913 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4487 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3258 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5240 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4008 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5334 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9600 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3195 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1376 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7026 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8586 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2042 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6707 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6206 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5742 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1730 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 151 MB. Current time: 4/18/25, 2:02:41 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4184 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2975 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5818 ms.
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 11052 seconds
+dismissDialog("Re-customize IP"); // O (cp)
+// Elapsed time: 10 seconds
+selectButton("Interrupts", "Interrupts"); // k (ch, r)
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0); // an (Q, r)
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0, "Fabric Interrupts", 0, true); // an (Q, r) - Node
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "PL-PS Interrupt Ports ; PL-PS Interrupt Ports ; PL-PS Interrupt Ports", 1); // an (Q, r)
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "IRQ_F2P[15:0] ; [91:84], [68:61] ; Enables 16-bit shared interrupt port from the PL. MSB is assigned the highest Interrupt ID of 91", 2, "IRQ_F2P[15:0]", 0, false); // an (Q, r)
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 26 seconds
+dismissDialog("Re-customize IP"); // O (cp)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6801 ms. Increasing delay to 20403 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1 ms. Decreasing delay to 2001 ms.
+// Elapsed time: 110 seconds
+expandTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 11); // bt (Q, r)
+selectTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 12, (String) null, 0, false); // bt (Q, r)
+selectTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 12, (String) null, 0, false); // bt (Q, r)
+collapseTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 11); // bt (Q, r)
+expandTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 12); // bt (Q, r)
+collapseTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 12); // bt (Q, r)
+expandTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 22); // bt (Q, r)
+collapseTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String) null, 22); // bt (Q, r)
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aW (Q, r)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aW (Q, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (Q, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (Q, r)
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+selectButton("DDR Configuration", "DDR Configuration"); // k (ch, r)
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2, "PL Fabric Clocks", 0, true); // A (Q, r) - Node
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A (Q, r)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A (Q, r)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1928 ms. Increasing delay to 5784 ms.
+// Elapsed time: 247 seconds
+dismissDialog("Re-customize IP"); // r (cp)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]' INFO: [Common 17-17] undo 'startgroup' 
+typeControlKey(null, null, 'z');
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true, false, false, false, true, false); // u (Q, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_IP_INTEGRATOR, "Close"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_IP_INTEGRATOR
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// HOptionPane Warning: 'Would you like to save 'Block Design - system' before closing? (Unsaved Changes)'
+dismissDialog("Confirm Close"); // A (cp)
+// 'a' command handler elapsed time: 7 seconds
+selectButton("PAResourceQtoS.SaveProjectUtils_THERE_UNSAVED_CHANGES_OK_TO_SAVE_No", "No"); // JButton (C, I)
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs system] 
+// bx (cp):  Close Block Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Close Block Design"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Successfully read diagram <system> from BD file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 265 MB (+15288kb) [04:48:42]
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bx (cp)
+// Elapsed time: 1093 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Navigator.xdc", 1); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 199 MB. Current time: 4/18/25, 2:32:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 3:02:49 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 3:32:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 4:02:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 4:32:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 5:02:59 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1132 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1025 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 5:33:02 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  3945 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1015 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6873 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8744 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6002 ms to process. Increasing delay to 8000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/18/25, 6:03:06 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1147 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2382 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4517 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1237 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2389 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8499 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  28511 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 9:00:48 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  8532 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12003 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12003 ms. Increasing delay to 36009 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 0 ms. Decreasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7408 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1468 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3126 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2247 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7197 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5094 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4123 ms to process. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1275 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3080 ms. Increasing delay to 9240 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3378 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 12105 ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1322 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 9:29:57 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  11755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3423 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1486 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2415 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 10:00:00 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 10:30:02 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 11:00:05 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 11:30:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 12:00:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 198 MB. Current time: 4/21/25, 12:30:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 1:00:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 1:30:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 2:00:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 2:30:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 3:00:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 198 MB. Current time: 4/21/25, 3:30:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 198 MB. Current time: 4/21/25, 4:00:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 4:30:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 5:00:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/21/25, 5:30:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 198 MB. Current time: 4/21/25, 6:00:26 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  52129000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  22390 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 197 MB. Current time: 4/22/25, 8:42:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 190 MB. Current time: 4/22/25, 9:11:51 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 190 MB. Current time: 4/22/25, 9:41:53 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 190 MB. Current time: 4/22/25, 10:11:56 AM CST

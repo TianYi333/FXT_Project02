@@ -1,0 +1,704 @@
+!SESSION 2025-05-29 10:44:21.186 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq_v1.1\Vitis\.metadata\.bak_0.log
+Created Time: 2025-05-29 14:11:40.898
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.899
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.906
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.906
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.915
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.915
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.915
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.916
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.922
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.983
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:40.983
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:43.986
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.080
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.084
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.091
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.092
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.109
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:44.110
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.423
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.439
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.444
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.444
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.449
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_1]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.449
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.450
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.450
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.454
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.454
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/psinit/ps7_init.tcl], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.454
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.456
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.594
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.594
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.598
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.598
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.602
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:46.603
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/Debug/Mini_ctrl_brd_zynq_v1.elf], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.267
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/Debug/Mini_ctrl_brd_zynq_v1.elf], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.268
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.288
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.339
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.353
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.353
+!MESSAGE XSCT Command: [con], Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:11:47.395
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-39: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.531
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.536
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.536
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.539
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-05-29 14:23:07.539
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq_v1.1\Vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.540
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:07.541
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-60: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:14.108
+!MESSAGE XSCT Command: [disconnect tcfchan#28], Thread: Thread-1970
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:14.124
+!MESSAGE XSCT command with result: [disconnect tcfchan#28], Result: [null, ]. Thread: Thread-1970
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.131
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.134
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#29]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.134
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.140
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.140
+!MESSAGE XSCT Command: [version -server], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.159
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.160
+!MESSAGE XSCT Command: [version], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.160
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.160
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.163
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.163
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.170
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.170
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.173
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.173
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.181
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.181
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.184
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.184
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.191
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.191
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.194
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.194
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.202
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.202
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.204
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.204
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.212
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.212
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.215
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.215
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.222
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.223
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.231
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.231
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.232
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.232
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.237
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.237
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.298
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:15.298
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.312
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.324
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.328
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.328
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.335
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.351
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:18.351
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.664
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.689
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.689
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.692
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_1]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.693
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.693
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.694
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.698
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.698
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/psinit/ps7_init.tcl], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.699
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.700
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.836
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.837
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.840
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.840
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.860
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:20.861
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/Debug/Mini_ctrl_brd_zynq_v1.elf], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.500
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/Mini_ctrl_brd_zynq_v1/Debug/Mini_ctrl_brd_zynq_v1.elf], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.501
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.522
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.574
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.625
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.626
+!MESSAGE XSCT Command: [con], Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 14:23:21.637
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-60: Launching Debugger_Mini_ctrl_brd_zynq_v1-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 15:06:31.228
+!MESSAGE XSCT Command: [disconnect tcfchan#29], Thread: Thread-2088
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-05-29 15:06:31.250
+!MESSAGE XSCT command with result: [disconnect tcfchan#29], Result: [null, ]. Thread: Thread-2088
+!SESSION 2025-09-11 17:30:58.452 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-09-11 17:31:16.900
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.934
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.935
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.937
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.948
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.949
+!MESSAGE XSCT Command: [setws D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:18.950
+!MESSAGE XSCT command with result: [setws D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:19.720
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:19.951
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:19.951
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:19.952
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, E:/Xilinx2021/Vitis/2021.1/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:23.298
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.022
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.026
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.030
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.030
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.032
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-11 17:31:24.034
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq_v1.1\Vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.037
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.038
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.665
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-11 17:31:24.670
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq_v1.1/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"TOP_0": {"hier_name": "TOP_0",
+"type": "TOP",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"ps_pl_axi4_0": {"hier_name": "ps_pl_axi4_0",
+"type": "ps_pl_axi4",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_ps7_0_125M": {"hier_name": "rst_ps7_0_125M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_1": {"hier_name": "ps7_sd_1",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ttc_0": {"hier_name": "ps7_ttc_0",
+"type": "ps7_ttc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-3: Build Project
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-11 17:31:25.026
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-11 17:31:25.027
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-11 17:31:25.027
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

@@ -1,0 +1,25 @@
+15:18:51 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/bram.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bram.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/bram.d" -MT"src/bram.o" -o "src/bram.o" "../src/bram.c"
+../src/bram.c: In function 'str_wr_bram':
+../src/bram.c:28:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();// 刷新缓存确保写入生效
+  ^~~~~~~~~~~~~~~
+../src/bram.c: In function 'psReadBram':
+../src/bram.c:53:5: warning: implicit declaration of function 'XGpio_InterruptClear'; did you mean 'XBram_InterruptClear'? [-Wimplicit-function-declaration]
+     XGpio_InterruptClear(&Gpio, 1); // 清除中断标志
+     ^~~~~~~~~~~~~~~~~~~~
+     XBram_InterruptClear
+../src/bram.c:53:27: error: 'Gpio' undeclared (first use in this function); did you mean 'XGpioPs'?
+     XGpio_InterruptClear(&Gpio, 1); // 清除中断标志
+                           ^~~~
+                           XGpioPs
+../src/bram.c:53:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:50: src/bram.o] Error 1
+
+15:18:51 Build Finished (took 281ms)
+

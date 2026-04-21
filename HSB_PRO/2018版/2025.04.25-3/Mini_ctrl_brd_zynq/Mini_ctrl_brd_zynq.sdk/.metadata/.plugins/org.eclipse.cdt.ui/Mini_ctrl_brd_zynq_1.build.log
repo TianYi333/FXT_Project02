@@ -1,0 +1,120 @@
+14:43:33 **** Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Angle_Sensor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Angle_Sensor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Angle_Sensor.d" -MT"src/Angle_Sensor.o" -o "src/Angle_Sensor.o" "../src/Angle_Sensor.c"
+'Finished building: ../src/Angle_Sensor.c'
+' '
+'Building file: ../src/am2302.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/am2302.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/am2302.d" -MT"src/am2302.o" -o "src/am2302.o" "../src/am2302.c"
+'Finished building: ../src/am2302.c'
+' '
+'Building file: ../src/freertos_tcp_perf_server.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_tcp_perf_server.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_tcp_perf_server.d" -MT"src/freertos_tcp_perf_server.o" -o "src/freertos_tcp_perf_server.o" "../src/freertos_tcp_perf_server.c"
+'Finished building: ../src/freertos_tcp_perf_server.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Angle_Sensor_processing_thread':
+../src/main.c:474:42: warning: variable 'Yaw' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                                          ^~~
+../src/main.c:474:36: warning: variable 'Pitch' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                                    ^~~~~
+../src/main.c:474:31: warning: variable 'Roll' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                               ^~~~
+../src/main.c:474:28: warning: variable 'Wz' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                            ^~
+../src/main.c:474:25: warning: variable 'Wy' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                         ^~
+../src/main.c:474:22: warning: variable 'Wx' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                      ^~
+../src/main.c:474:20: warning: variable 'T' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                    ^
+../src/main.c:474:17: warning: variable 'Az' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                 ^~
+../src/main.c:474:14: warning: variable 'Ay' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+              ^~
+../src/main.c:474:11: warning: variable 'Ax' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+           ^~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/oled.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/oled.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/oled.d" -MT"src/oled.o" -o "src/oled.o" "../src/oled.c"
+'Finished building: ../src/oled.c'
+' '
+'Building file: ../src/ssd1309_spi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ssd1309_spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ssd1309_spi.d" -MT"src/ssd1309_spi.o" -o "src/ssd1309_spi.o" "../src/ssd1309_spi.c"
+'Finished building: ../src/ssd1309_spi.c'
+' '
+'Building file: ../src/timer_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_intr.d" -MT"src/timer_intr.o" -o "src/timer_intr.o" "../src/timer_intr.c"
+'Finished building: ../src/timer_intr.c'
+' '
+'Building target: Mini_ctrl_brd_zynq_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq_1.elf"  ./src/Angle_Sensor.o ./src/am2302.o ./src/freertos_tcp_perf_server.o ./src/iic_phyreset.o ./src/main.o ./src/oled.o ./src/ssd1309_spi.o ./src/timer_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+./src/freertos_tcp_perf_server.o: In function `tcp_recv_perf_traffic':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:45: undefined reference to `lwip_write'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:53: undefined reference to `lwip_recvfrom'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:77: undefined reference to `lwip_close'
+./src/freertos_tcp_perf_server.o: In function `start_application':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:102: undefined reference to `lwip_socket'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:107: undefined reference to `lwip_htons'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:111: undefined reference to `lwip_bind'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:114: undefined reference to `lwip_close'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:118: undefined reference to `lwip_listen'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:120: undefined reference to `lwip_close'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:127: undefined reference to `lwip_accept'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:129: undefined reference to `sys_thread_new'
+./src/main.o: In function `assign_default_ip':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:82: undefined reference to `ip4addr_aton'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:86: undefined reference to `ip4addr_aton'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:90: undefined reference to `ip4addr_aton'
+./src/main.o: In function `main':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:117: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:121: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:125: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:129: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:133: undefined reference to `sys_thread_new'
+./src/main.o:D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:137: more undefined references to `sys_thread_new' follow
+./src/main.o: In function `main_thread':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:173: undefined reference to `lwip_init'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:176: undefined reference to `sys_thread_new'
+./src/main.o: In function `network_thread':
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:220: undefined reference to `xemac_add'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:225: undefined reference to `netif_set_default'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:228: undefined reference to `netif_set_up'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `xemacif_input_thread'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `xemacif_input_thread'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:241: undefined reference to `dhcp_start'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:244: undefined reference to `dhcp_fine_tmr'
+D:\ASUS-PC\Desktop\temporary\历史\2025.04.25-3-添加角度传感器(轮询)\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:247: undefined reference to `dhcp_coarse_tmr'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Mini_ctrl_brd_zynq_1.elf] Error 1
+
+14:43:34 Build Finished (took 1s.474ms)
+

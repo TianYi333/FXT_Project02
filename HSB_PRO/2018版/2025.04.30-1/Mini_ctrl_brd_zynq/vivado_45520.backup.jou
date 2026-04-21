@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 27 17:05:23 2025
+# Process ID: 45520
+# Current directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32304 D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+close_design
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+wait_on_run impl_1
+file copy -force D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper.sysdef D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk -hwspec D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.sdk/system_wrapper.hdf

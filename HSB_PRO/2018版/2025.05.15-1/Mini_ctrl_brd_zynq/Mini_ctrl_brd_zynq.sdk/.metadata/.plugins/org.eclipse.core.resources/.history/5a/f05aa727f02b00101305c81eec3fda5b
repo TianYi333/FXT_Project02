@@ -1,0 +1,29 @@
+#include "Lwip_Receive.h"
+
+
+uint8_t Lwip_Receive_buf[101];
+uint8_t Lwip_Send_buf[20];
+
+void Lwip_Receive_function()
+{
+	int n=0;//n为接收数据数
+	n=Lwip_Receive_buf[0];//n为接收数据数
+	printf("%s\n","Received data");
+	printf("%s\n",&Lwip_Receive_buf[1]);
+	printf("%d\n",n);
+	if (n == 6 && !(memcmp("update",&Lwip_Receive_buf[1], 6)))
+	{
+		printf("%s\n","update received data");
+	}
+	else
+	{
+		for(int i=1;i<(n+1);i++)
+		{
+			printf("%x\n",Lwip_Receive_buf[i]);
+		}
+	}
+	strcpy(Lwip_Send_buf, "Received data");
+	xQueueSend(Lwip_Send_Queue,Lwip_Send_buf,0);
+	memset(Lwip_Receive_buf, 0, 10);
+}
+

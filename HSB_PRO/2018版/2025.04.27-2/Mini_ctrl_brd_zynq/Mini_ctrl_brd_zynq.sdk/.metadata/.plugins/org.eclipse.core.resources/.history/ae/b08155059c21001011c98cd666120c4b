@@ -1,0 +1,8 @@
+*startfile:
+crti%O%s crtbegin%O%s
+
+&uart1 {
+    status = "okay";
+    pinctrl-names = "default";
+    pinctrl-0 = <&pinctrl_uart1>;
+};

@@ -1,0 +1,49 @@
+11:41:58 **** Incremental Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: Mini_ctrl_brd_zynq_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq_1.elf"  ./src/Angle_Sensor.o ./src/Lwip_Receive.o ./src/TTC_timer_intr.o ./src/freertos_tcp_perf_server.o ./src/iic_phyreset.o ./src/led.o ./src/main.o ./src/ssd1309_spi.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+./src/freertos_tcp_perf_server.o: In function `tcp_recv_perf_traffic':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:45: undefined reference to `lwip_write'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:53: undefined reference to `lwip_recvfrom'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:77: undefined reference to `lwip_close'
+./src/freertos_tcp_perf_server.o: In function `start_application':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:102: undefined reference to `lwip_socket'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:107: undefined reference to `lwip_htons'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:111: undefined reference to `lwip_bind'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:114: undefined reference to `lwip_close'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:118: undefined reference to `lwip_listen'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:120: undefined reference to `lwip_close'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:127: undefined reference to `lwip_accept'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/freertos_tcp_perf_server.c:129: undefined reference to `sys_thread_new'
+./src/main.o: In function `assign_default_ip':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:83: undefined reference to `ip4addr_aton'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:87: undefined reference to `ip4addr_aton'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:91: undefined reference to `ip4addr_aton'
+./src/main.o: In function `main':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:108: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:112: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:116: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:120: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:124: undefined reference to `sys_thread_new'
+./src/main.o:D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:128: more undefined references to `sys_thread_new' follow
+./src/main.o: In function `main_thread':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:172: undefined reference to `lwip_init'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:175: undefined reference to `sys_thread_new'
+./src/main.o: In function `network_thread':
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:220: undefined reference to `xemac_add'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:225: undefined reference to `netif_set_default'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:228: undefined reference to `netif_set_up'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `xemacif_input_thread'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `xemacif_input_thread'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:231: undefined reference to `sys_thread_new'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:241: undefined reference to `dhcp_start'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:244: undefined reference to `dhcp_fine_tmr'
+D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk\Mini_ctrl_brd_zynq_1\Debug/../src/main.c:247: undefined reference to `dhcp_coarse_tmr'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Mini_ctrl_brd_zynq_1.elf] Error 1
+
+11:41:58 Build Finished (took 274ms)
+

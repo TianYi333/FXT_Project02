@@ -1,0 +1,23 @@
+09:11:53 **** Incremental Build of configuration Debug for project Mini_ctrl_brd_zynq_0 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Lwip_Receive.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Lwip_Receive.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Lwip_Receive.d" -MT"src/Lwip_Receive.o" -o "src/Lwip_Receive.o" "../src/Lwip_Receive.c"
+'Finished building: ../src/Lwip_Receive.c'
+' '
+'Building target: Mini_ctrl_brd_zynq_0.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_0_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq_0.elf"  ./src/Lwip_Receive.o ./src/freertos_tcp_perf_server.o ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Mini_ctrl_brd_zynq_0.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Mini_ctrl_brd_zynq_0.elf  |tee "Mini_ctrl_brd_zynq_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 209760	   3420	32561440	32774620	1f419dc	Mini_ctrl_brd_zynq_0.elf
+'Finished building: Mini_ctrl_brd_zynq_0.elf.size'
+' '
+
+09:11:53 Build Finished (took 410ms)
+

@@ -1,0 +1,33 @@
+/*
+ * am2302_driver.h
+ *
+ *  Created on: 2025Äê4ÔÂ23ÈÕ
+ *      Author: ASUS-PC
+ */
+
+#ifndef SRC_AM2302_DRIVER_H_
+#define SRC_AM2302_DRIVER_H_
+
+#include "main.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+
+#define AM2302_GPIO_BANK   XPAR_PS7_GPIO_0_BASEADDR
+#define AM2302_PIN         AM2302_1_SDA
+#define RETRY_MAX          3
+#define DATA_BITS          40
+
+typedef struct {
+    float humidity;
+    float temperature;
+    TickType_t timestamp;
+} AM2302_Data_t;
+
+extern QueueHandle_t am2302_data_queue;
+extern QueueHandle_t am2302_error_queue;
+
+void AM2302_Init(void);
+BaseType_t AM2302_Read(AM2302_Data_t *result);
+
+#endif /* SRC_AM2302_DRIVER_H_ */

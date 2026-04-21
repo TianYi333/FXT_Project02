@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.sdk"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="com.xilinx.sdk.appwiz.AppWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.xilinx.sdk.ui.category.newWizards"/>
+		</list>
+	</section>
+</section>

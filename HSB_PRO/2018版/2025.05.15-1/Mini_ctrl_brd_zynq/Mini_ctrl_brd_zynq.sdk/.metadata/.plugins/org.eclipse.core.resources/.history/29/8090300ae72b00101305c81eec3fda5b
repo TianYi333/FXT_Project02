@@ -1,0 +1,23 @@
+#include "Lwip_Receive.h"
+
+
+uint8_t Lwip_Receive_buf[101];
+uint8_t Lwip_Send_buf[20];
+
+void Lwip_Receive_function()
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

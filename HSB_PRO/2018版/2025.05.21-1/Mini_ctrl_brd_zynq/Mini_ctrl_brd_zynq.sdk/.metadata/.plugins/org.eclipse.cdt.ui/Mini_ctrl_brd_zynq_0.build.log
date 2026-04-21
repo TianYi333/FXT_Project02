@@ -1,0 +1,8 @@
+08:39:49 **** Incremental Build of configuration Debug for project Mini_ctrl_brd_zynq_0 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+08:39:49 Build Finished (took 160ms)
+

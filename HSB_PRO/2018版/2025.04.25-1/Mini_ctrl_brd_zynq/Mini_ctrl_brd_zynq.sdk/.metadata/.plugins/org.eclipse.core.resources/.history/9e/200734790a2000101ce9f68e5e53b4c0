@@ -1,0 +1,27 @@
+#ifndef SRC_TIMER_INTR_H_
+#define SRC_TIMER_INTR_H_
+
+#include "main.h"
+#include "xparameters.h"
+#include "xscutimer.h"
+#include "xscugic.h"
+#include "xgpiops.h"
+#include "xil_exception.h"
+
+#define TIMER_DEVICE_ID 	XPAR_XSCUTIMER_0_DEVICE_ID //定时器 ID
+#define INTC_DEVICE_ID 		XPAR_SCUGIC_SINGLE_DEVICE_ID //中断 ID
+#define TIMER_IRQ_ID 		XPAR_SCUTIMER_INTR //定时器中断 ID
+#define TIMER_INTERVAL_US	1 // 定时器间隔为1μs
+
+extern XScuTimer TimerInstance;        // 定时器实例
+extern XScuGic InterruptController;    // 中断控制器实
+
+void TimerIntrHandler(void *CallBackRef);
+void vRTOS_DelayUs(uint32_t us);
+uint32_t ulRTOS_GetUs(void);
+int RTOS_TimerInit(void);
+void RTOS_InterruptInit(void);
+
+
+
+#endif /* SRC_TIMER_INTR_H_ */

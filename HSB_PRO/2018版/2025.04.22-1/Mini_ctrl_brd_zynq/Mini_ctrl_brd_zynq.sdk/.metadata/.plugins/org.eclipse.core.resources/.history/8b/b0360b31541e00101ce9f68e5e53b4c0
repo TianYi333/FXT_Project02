@@ -1,0 +1,232 @@
+#include "ssd1309_spi.h"
+
+XGpioPs gpiops_inst; //PS 端 GPIO 驱动实例
+
+// 显存缓冲区（128x64像素，按页组织）
+static uint8_t screenBuffer[SSD1309_WIDTH][SSD1309_PAGES];
+
+// 设置GPIO引脚电平
+static void GPIO_Set(uint8_t pin, uint8_t level) {
+	XGpioPs_WritePin(&gpiops_inst, pin, level);
+}
+
+// 模拟SPI发送单字节（高位在前）
+static void SPI_SendByte(uint8_t byte) {
+    for (int i = 7; i >= 0; i--) {
+        GPIO_Set(PIN_CLK, 0);          // CLK拉低
+        GPIO_Set(PIN_DIN, (byte >> i) & 0x01);  // 设置数据位
+        usleep(1);                     // 保持时序（根据时钟速度调整）
+        GPIO_Set(PIN_CLK, 1);          // CLK上升沿锁存数据
+        usleep(1);
+    }
+}
+
+// 发送命令或数据
+static void SSD1309_Write(uint8_t isData, uint8_t byte) {
+    GPIO_Set(PIN_DC, isData);   // DC引脚：0=命令, 1=数据
+    GPIO_Set(PIN_CS, 0);        // CS拉低
+    SPI_SendByte(byte);
+    GPIO_Set(PIN_CS, 1);        // CS拉高
+}
+
+// 初始化GPIO和SPI
+void SPI_Init(void) {
+	gpiops_cfg_ptr = XGpioPs_LookupConfig(GPIOPS_ID);
+	//EMIO配置为输出
+    XGpioPs_SetDirectionPin(&gpiops_inst, PIN_DIN,1);
+    XGpioPs_SetDirectionPin(&gpiops_inst, PIN_CLK,1);
+    XGpioPs_SetDirectionPin(&gpiops_inst, PIN_CS,1);
+    XGpioPs_SetDirectionPin(&gpiops_inst, PIN_DC,1);
+    XGpioPs_SetDirectionPin(&gpiops_inst, PIN_RES,1);
+    //使能EMIO输出
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, PIN_DIN,1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, PIN_CLK,1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, PIN_CS,1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, PIN_DC,1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, PIN_RES,1);
+    // 复位引脚初始化为高
+    GPIO_Set(PIN_RES, 1);        // 复位引脚初始化为高
+}
+
+// SSD1309初始化序列
+void SSD1309_Init(void) {
+    // 硬件复位
+    GPIO_Set(PIN_RES, 0);
+    usleep(10000);      // 保持低电平10ms
+    GPIO_Set(PIN_RES, 1);
+    usleep(10000);
+
+    // 发送初始化命令
+    SSD1309_Write(0, 0xAE);     // 关闭显示
+    SSD1309_Write(0, 0xD5);     // 设置时钟分频
+    SSD1309_Write(0, 0x80);     // 建议值0x80
+    SSD1309_Write(0, 0xA8);     // 设置复用率
+    SSD1309_Write(0, 0x3F);     // 高度-1=63
+    SSD1309_Write(0, 0xD3);     // 设置显示偏移
+    SSD1309_Write(0, 0x00);     // 偏移量0
+    SSD1309_Write(0, 0x40);     // 设置显示起始行
+    SSD1309_Write(0, 0x8D);     // 电荷泵设置
+    SSD1309_Write(0, 0x14);     // 启用电荷泵
+    SSD1309_Write(0, 0x20);     // 内存地址模式
+    SSD1309_Write(0, 0x00);     // 水平模式(0X00/0X01/0X02)
+    SSD1309_Write(0, 0xA0);     // 段重映射列127->SEG0(0XA0/0XA1)
+    SSD1309_Write(0, 0xC0);     // 行重映射COM63->COM0(0XC0/0XC8)
+    SSD1309_Write(0, 0xDA);     // COM引脚配置
+    SSD1309_Write(0, 0x12);     // 备用COM引脚设置
+    SSD1309_Write(0, 0x81);     // 设置对比度
+    SSD1309_Write(0, 0xCF);     // 对比度值
+    SSD1309_Write(0, 0xD9);     // 预充电周期
+    SSD1309_Write(0, 0xF1);     // Phase1=1, Phase2=15
+    SSD1309_Write(0, 0xDB);     // VCOMH电压
+    SSD1309_Write(0, 0x40);     // VCOMH=0.83*VCC
+    SSD1309_Write(0, 0xA4);     // 显示内容不跟随RAM
+    SSD1309_Write(0, 0xA6);     // 正常显示（非反色）
+    SSD1309_Write(0, 0xAF);     // 开启显示
+}
+
+// 清空显存
+void SSD1309_Clear(void) {
+    for (int x = 0; x < SSD1309_WIDTH; x++) {
+        for (int page = 0; page < SSD1309_PAGES; page++) {
+            screenBuffer[x][page] = 0x00;
+        }
+    }
+}
+
+// 刷新屏幕（将显存内容发送到SSD1309）
+void SSD1309_Update(void) {
+    for (int page = 0; page < SSD1309_PAGES; page++) {
+        SSD1309_Write(0, 0xB0 + page);  // 设置页地址
+        SSD1309_Write(0, 0x00);         // 列地址低位
+        SSD1309_Write(0, 0x10);         // 列地址高位
+
+        for (int x = 0; x < SSD1309_WIDTH; x++) {
+            SSD1309_Write(1, screenBuffer[x][page]);  // 发送显存数据
+        }
+    }
+}
+
+// 绘制像素点（坐标从0开始）
+void SSD1309_DrawPixel(int x, int y, int color) {
+    if (x >= SSD1309_WIDTH || y >= SSD1309_HEIGHT) return;
+    int page = y / 8;
+    uint8_t bit = y % 8;
+    if (color) {
+        screenBuffer[x][page] |= (1 << bit);
+    } else {
+        screenBuffer[x][page] &= ~(1 << bit);
+    }
+}
+
+// 测试图案：绘制对角线
+void SSD1309_TestPattern(void) {
+    SSD1309_Clear();
+    for (int i = 0; i < SSD1309_WIDTH; i++) {
+        SSD1309_DrawPixel(i, i % SSD1309_HEIGHT, 1);
+    }
+    SSD1309_Update();
+}
+
+/**
+ * @brief 在指定位置显示ASCII字符串
+ * @param x 起始列坐标(0-127)
+ * @param y 起始页坐标(0-7)
+ * @param str 要显示的字符串
+ * @param invert 是否反色显示(0:正常,1:反色)
+ */
+void SSD1309_DrawString(int x, int y, const char* str, int invert) {
+    while (*str) {
+        // 字符超出屏幕范围处理
+        if (x >= SSD1309_WIDTH) break;
+        if (y >= SSD1309_PAGES) break;
+
+        // 获取ASCII字符索引（仅支持0x20-0x7E）
+        uint8_t char_index = (uint8_t)(*str) - 0x20;
+        if (char_index > 0x5E) char_index = 0; // 非法字符显示空格
+
+        // 绘制单个字符（8x8点阵）
+        for (int col = 0; col < 8; col++) {
+            uint8_t font_data = FONT_8x8[char_index * 8 + col];
+            if (invert) font_data = ~font_data;
+
+            for (int row = 0; row < 8; row++) {
+                if (font_data & (1 << row)) {
+                    SSD1309_DrawPixel(x + col, y * 8 + row, 1);
+                }
+            }
+        }
+        x += 8; // 字符间距
+        str++;
+    }
+    SSD1309_Update(); // 刷新显存到屏幕
+}
+
+// 垂直绘制函数（X轴向下，Y轴向右）
+void SSD1309_DrawVerticalString(int start_col, int start_page, const char* str) {
+    uint8_t *p = (uint8_t*)str;
+    while (*p) {
+        // 1. 计算字符索引
+        uint8_t char_idx = (*p++) - 0x20;
+        if (char_idx > 0x5E) char_idx = 0;
+
+        // 2. 获取旋转后的字模数据
+        const uint8_t* font = &FONT_8x8_ROT90[char_idx * 8];
+
+        // 3. 逐列写入显存（列方向变为垂直方向）
+        for (int col=0; col<8; col++) {
+            uint8_t data = font[col];
+            for (int bit=0; bit<8; bit++) {
+                if (data & (1 << bit)) {
+                    SSD1309_DrawPixel(start_col + col, start_page*8 + bit, 1);
+                }
+            }
+        }
+        start_col += 8; // 向右移动字符宽度
+    }
+    SSD1309_Update();
+}
+
+void OLED_ShowChinese(uint8_t x, uint8_t y, const uint8_t *font) {
+    for (uint8_t page=0; page<2; page++) { // 分两页显示（16行）
+        OLED_SetCursor(y + page, x);        // 设置页地址
+        for (uint8_t col=0; col<16; col++) {
+            uint8_t data = font[page*16 + col];
+            SSD1309_Write(1,data);          // 逐列发送数据
+        }
+    }
+}
+
+// 修正后的汉字显示函数
+void OLED_ShowChinese_Fix(uint8_t x, uint8_t y, const uint8_t *font) {
+    for (uint8_t col=0; col<16; col++) { // 遍历16列
+        OLED_SetCursor(y, x + col);      // 设置到目标列
+        // 发送当前列的上半部分（前16字节）
+        SSD1309_Write(1,font[col]);
+        // 发送当前列的下半部分（后16字节）
+        SSD1309_Write(1,font[col + 16]);
+    }
+}
+/**
+ * @brief 设置显存操作起始地址
+ * @param page 页地址（0-7，对应屏幕的8行一组）
+ * @param column 列地址（0-127）
+ */
+void OLED_SetCursor(uint8_t page, uint8_t column) {
+    // 确保地址在有效范围内
+    page = page & 0x07;    // 限制页地址0-7
+    column = column & 0x7F;// 限制列地址0-127
+
+    // 发送页地址命令：0xB0 | page
+    GPIO_Set(PIN_DC, 0);   // DC=0: 命令模式
+    SPI_SendByte(0xB0 | page);
+
+    // 发送列地址低4位：0x00 | (column & 0x0F)
+    SPI_SendByte(0x00 | (column & 0x0F));
+
+    // 发送列地址高4位：0x10 | ((column >> 4) & 0x0F)
+    SPI_SendByte(0x10 | ((column >> 4) & 0x0F));
+
+    GPIO_Set(PIN_DC, 1);   // DC=1: 恢复数据模式
+}
+
+

@@ -1,0 +1,47 @@
+$date
+        2025-May-08 10:54:10
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " u_ila_0_doutb [31:0] $end
+$var reg 11 B system_i/blk_mem_gen_0/U0/addrb [12:2] $end
+$var reg 1 M system_i/blk_mem_gen_0/U0/enb $end
+$var reg 1 N _TRIGGER $end
+$var reg 1 O _WINDOW $end
+$var reg 1 P _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110011 "
+b0 B
+0M
+0N
+1O
+0P
+$end
+#512
+1M
+1N
+#513
+b110001 "
+b1 B
+#514
+b110010 "
+b10 B
+#515
+b110011 "
+b11 B
+#516
+b110100 "
+b100 B
+#517
+b110101 "
+0M
+#518
+b0 B

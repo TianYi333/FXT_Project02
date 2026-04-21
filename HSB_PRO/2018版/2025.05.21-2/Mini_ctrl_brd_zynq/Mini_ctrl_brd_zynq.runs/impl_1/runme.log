@@ -1,0 +1,995 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/ip_repo/AM2302_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/APP/Vivado-Xilinx/Xilinx/Vivado/2018.3/data/ip'.
+Command: link_design -top system_wrapper -part xc7z020clg400-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_Pro_FPGA_ctrl_0_1/system_Pro_FPGA_ctrl_0_1.dcp' for cell 'system_i/Pro_FPGA_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.dcp' for cell 'system_i/rst_ps7_0_125M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 4833 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc] for cell 'system_i/rst_ps7_0_125M/U0'
+Finished Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc] for cell 'system_i/rst_ps7_0_125M/U0'
+Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc] for cell 'system_i/rst_ps7_0_125M/U0'
+Finished Parsing XDC File [d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc] for cell 'system_i/rst_ps7_0_125M/U0'
+Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc]
+Finished Parsing XDC File [D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/constrs_1/new/Navigator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 848.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 24 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 848.707 ; gain = 476.668
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.405 . Memory (MB): peak = 857.633 ; gain = 5.961
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12316f7fb
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1482.109 ; gain = 624.328
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2105cd686
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 44 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 24afc67ab
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 1952 cells and removed 4582 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 2607eb2cb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 1406 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 2607eb2cb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 10f5a2dba
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: f208e16c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1556.676 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               4  |              44  |                                              0  |
+|  Constant propagation         |            1952  |            4582  |                                              0  |
+|  Sweep                        |               4  |            1406  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1556.676 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: f208e16c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1556.676 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.774 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 3 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 1b2b6310c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1b2b6310c
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1966.828 ; gain = 410.152
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b2b6310c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: dc82c644
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1966.828 ; gain = 1115.156
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Coretcl 2-168] The results of DRC are in file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d15c9b41
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 157271113
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2201e2723
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2201e2723
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2201e2723
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 17eea6711
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1e166653f
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 171f67e04
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 171f67e04
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: da311bfa
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 13d44747e
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ab275ea1
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 20c8cd8c6
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:42 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1b8fe7299
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 195583852
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 195583852
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: e0ff63f7
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_gy_25/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/rst_test, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/rst_test, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: e0ff63f7
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.726. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: d47c0fbd
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: d47c0fbd
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d47c0fbd
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:50 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d47c0fbd
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:50 . Memory (MB): peak = 1966.828 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: e29d61d6
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e29d61d6
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Ending Placer Task | Checksum: 714270d8
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:52 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1966.828 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1966.828 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 615108aa ConstDB: 0 ShapeSum: ff1682e RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e121adb1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1979.477 ; gain = 12.648
+Post Restoration Checksum: NetGraph: 91d48675 NumContArr: 4f4d273c Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: e121adb1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2010.473 ; gain = 43.645
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: e121adb1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2018.867 ; gain = 52.039
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: e121adb1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2018.867 ; gain = 52.039
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: e9d593fe
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2057.066 ; gain = 90.238
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.790  | TNS=0.000  | WHS=-0.380 | THS=-2599.721|
+
+Phase 2 Router Initialization | Checksum: e04ef58c
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2068.605 ; gain = 101.777
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: c991b9ee
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 11061
+ Number of Nodes with overlaps = 956
+ Number of Nodes with overlaps = 159
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.128 | TNS=-127.181| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 10fee770e
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:50 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.645 | TNS=-121.466| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1efad0eef
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:54 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.709 | TNS=-119.439| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1e5d1bd79
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:57 . Memory (MB): peak = 2109.633 ; gain = 142.805
+Phase 4 Rip-up And Reroute | Checksum: 1e5d1bd79
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:57 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d1c63638
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:58 . Memory (MB): peak = 2109.633 ; gain = 142.805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.645 | TNS=-121.466| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 260a6deba
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:58 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 260a6deba
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:59 . Memory (MB): peak = 2109.633 ; gain = 142.805
+Phase 5 Delay and Skew Optimization | Checksum: 260a6deba
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:59 . Memory (MB): peak = 2109.633 ; gain = 142.805
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d72dac49
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:00 . Memory (MB): peak = 2109.633 ; gain = 142.805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.645 | TNS=-116.795| WHS=-7.510 | THS=-5969.001|
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 1658d43fc
+
+Time (s): cpu = 00:07:45 ; elapsed = 00:05:39 . Memory (MB): peak = 2697.910 ; gain = 731.082
+Phase 6.1 Hold Fix Iter | Checksum: 1658d43fc
+
+Time (s): cpu = 00:07:45 ; elapsed = 00:05:39 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.025 | TNS=-201575.391| WHS=-6.897 | THS=-2004.855|
+
+Phase 6.2 Additional Hold Fix | Checksum: 1d2389dd9
+
+Time (s): cpu = 00:16:34 ; elapsed = 00:11:45 . Memory (MB): peak = 2697.910 ; gain = 731.082
+ Number of Nodes with overlaps = 2522
+ Number of Nodes with overlaps = 362
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+WARNING: [Route 35-468] The router encountered 1451 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[50][0]_i_1__0/I1
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[52][24]_i_1__0/I1
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[57][0]_i_1__0/I1
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[58][0]_i_1__0/I1
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[57][0]_i_1__0/I2
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_am2302/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[57][24]_i_1__0/I2
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_gy_25/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[11][60]_i_2/I2
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_gy_25/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[76][60]_i_2/I2
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_gy_25/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[10][60]_i_2/I4
+	system_i/Pro_FPGA_ctrl_0/U0/Pro_FPGA_ctrl_v1_0_S00_AXI_inst/inst_TOP/inst_fun_ssd1309/inst_fun_display_gy_25/inst_fun_d_ram_ssd1309/inst_d_ram_ssd1309/ssd1309_ram[76][18]_i_1/I1
+	.. and 1441 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 1ba7632d5
+
+Time (s): cpu = 00:39:25 ; elapsed = 00:25:38 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 39.5089 %
+  Global Horizontal Routing Utilization  = 37.4366 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 16x16 Area, Max Cong = 89.5763%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y22 -> INT_R_X47Y37
+South Dir 4x4 Area, Max Cong = 88.1757%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y130 -> INT_R_X43Y133
+   INT_L_X40Y126 -> INT_R_X43Y129
+   INT_FEEDTHRU_2_X121Y127 -> INT_R_X51Y125
+   INT_L_X40Y118 -> INT_R_X43Y121
+   INT_L_X40Y14 -> INT_R_X43Y17
+East Dir 16x16 Area, Max Cong = 87.3276%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y6 -> INT_R_X47Y21
+   INT_L_X32Y0 -> INT_R_X47Y5
+West Dir 4x4 Area, Max Cong = 87.7757%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X44Y14 -> INT_R_X47Y17
+   INT_L_X48Y14 -> INT_R_X51Y17
+   INT_L_X48Y10 -> INT_R_X51Y13
+   INT_L_X48Y6 -> INT_R_X51Y9
+   INT_L_X44Y2 -> INT_R_X47Y5
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 4
+Effective congestion level: 5 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: South
+----------------
+Congested clusters found at Level 2
+Effective congestion level: 3 Aspect Ratio: 0.2 Sparse Ratio: 1.25
+Direction: East
+----------------
+Congested clusters found at Level 4
+Effective congestion level: 5 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: West
+----------------
+Congested clusters found at Level 1
+Effective congestion level: 3 Aspect Ratio: 0.666667 Sparse Ratio: 3.0625
+
+Phase 7 Route finalize | Checksum: 10f90c78c
+
+Time (s): cpu = 00:39:25 ; elapsed = 00:25:39 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 10f90c78c
+
+Time (s): cpu = 00:39:25 ; elapsed = 00:25:39 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1b19625b4
+
+Time (s): cpu = 00:39:27 ; elapsed = 00:25:41 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1a0718b3d
+
+Time (s): cpu = 00:39:29 ; elapsed = 00:25:42 . Memory (MB): peak = 2697.910 ; gain = 731.082
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-11.910| TNS=-241138.719| WHS=-0.158 | THS=-1.909 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1a0718b3d
+
+Time (s): cpu = 00:39:29 ; elapsed = 00:25:43 . Memory (MB): peak = 2697.910 ; gain = 731.082
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:39:29 ; elapsed = 00:25:43 . Memory (MB): peak = 2697.910 ; gain = 731.082
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+87 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:39:31 ; elapsed = 00:25:44 . Memory (MB): peak = 2697.910 ; gain = 731.082
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2697.910 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+99 Infos, 204 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2697.910 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+119 Infos, 304 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2904.832 ; gain = 206.922
+INFO: [Common 17-206] Exiting Vivado at Thu May 22 10:17:58 2025...

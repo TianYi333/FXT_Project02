@@ -1,0 +1,23 @@
+18:11:58 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Mini_ctrl_brd_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq.elf"  ./src/freertos_tcp_perf_server.o ./src/iic_phyreset.o ./src/main.o ./src/oled.o ./src/ssd1309_spi.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Mini_ctrl_brd_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Mini_ctrl_brd_zynq.elf  |tee "Mini_ctrl_brd_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 224552	   3432	32626976	32854960	1f553b0	Mini_ctrl_brd_zynq.elf
+'Finished building: Mini_ctrl_brd_zynq.elf.size'
+' '
+
+18:11:59 Build Finished (took 770ms)
+

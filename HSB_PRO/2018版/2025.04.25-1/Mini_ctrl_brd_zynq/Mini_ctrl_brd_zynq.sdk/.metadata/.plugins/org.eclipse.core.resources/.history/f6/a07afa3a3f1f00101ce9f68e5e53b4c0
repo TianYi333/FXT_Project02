@@ -1,0 +1,14 @@
+#ifndef SRC_AM2302_H_
+#define SRC_AM2302_H_
+
+#include "main.h"
+#include "xgpiops.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+#define EMIO1_PIN  AM2302_1_SDA  // 根据Vivado中EMIO GPIO的Bank和引脚号设置
+#define DHT_CHECKSUM_ERROR  -1
+#define DHT_TIMEOUT_ERROR   -2
+
+#endif /* SRC_AM2302_H_ */

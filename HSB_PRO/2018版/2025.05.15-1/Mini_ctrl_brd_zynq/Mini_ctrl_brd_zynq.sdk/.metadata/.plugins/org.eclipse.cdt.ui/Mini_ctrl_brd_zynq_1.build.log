@@ -1,0 +1,148 @@
+17:56:19 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Angle_Sensor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Angle_Sensor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Angle_Sensor.d" -MT"src/Angle_Sensor.o" -o "src/Angle_Sensor.o" "../src/Angle_Sensor.c"
+'Finished building: ../src/Angle_Sensor.c'
+' '
+'Building file: ../src/Lwip_Receive.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Lwip_Receive.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Lwip_Receive.d" -MT"src/Lwip_Receive.o" -o "src/Lwip_Receive.o" "../src/Lwip_Receive.c"
+../src/Lwip_Receive.c: In function 'Lwip_Receive_function':
+../src/Lwip_Receive.c:28:9: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  strcpy(Lwip_Send_buf, "Received data");
+         ^~~~~~~~~~~~~
+In file included from d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/sleep.h:52,
+                 from ../src/main.h:4,
+                 from ../src/Lwip_Receive.h:4,
+                 from ../src/Lwip_Receive.c:1:
+d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:30:8: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
+        ^
+../src/Lwip_Receive.c:11:11: warning: unused variable 'XXX_value' [-Wunused-variable]
+  uint32_t XXX_value;//数据
+           ^~~~~~~~~
+../src/Lwip_Receive.c:10:11: warning: unused variable 'number_Data_bytes' [-Wunused-variable]
+  uint16_t number_Data_bytes=0;//数据字节
+           ^~~~~~~~~~~~~~~~~
+'Finished building: ../src/Lwip_Receive.c'
+' '
+'Building file: ../src/TTC_timer_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TTC_timer_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TTC_timer_intr.d" -MT"src/TTC_timer_intr.o" -o "src/TTC_timer_intr.o" "../src/TTC_timer_intr.c"
+'Finished building: ../src/TTC_timer_intr.c'
+' '
+'Building file: ../src/am2302.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/am2302.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/am2302.d" -MT"src/am2302.o" -o "src/am2302.o" "../src/am2302.c"
+'Finished building: ../src/am2302.c'
+' '
+'Building file: ../src/bram.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bram.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/bram.d" -MT"src/bram.o" -o "src/bram.o" "../src/bram.c"
+'Finished building: ../src/bram.c'
+' '
+'Building file: ../src/freertos_tcp_perf_server.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_tcp_perf_server.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_tcp_perf_server.d" -MT"src/freertos_tcp_perf_server.o" -o "src/freertos_tcp_perf_server.o" "../src/freertos_tcp_perf_server.c"
+'Finished building: ../src/freertos_tcp_perf_server.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led.d" -MT"src/led.o" -o "src/led.o" "../src/led.c"
+'Finished building: ../src/led.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Temperature_And_Humidity_Reading_thread':
+../src/main.c:358:10: warning: unused variable 'dht_data' [-Wunused-variable]
+  uint8_t dht_data[5];
+          ^~~~~~~~
+../src/main.c: In function 'Angle_Sensor_Recv_thread':
+../src/main.c:418:29: warning: passing argument 2 of 'memcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+    memcpy(&Rx_uart1_buf[0], &rx_buffer[0], rx_head);
+                             ^
+In file included from d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/sleep.h:52,
+                 from ../src/main.h:4,
+                 from ../src/main.c:29:
+d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:23:8: note: expected 'const void * restrict' but argument is of type 'volatile u8 * {aka volatile unsigned char *}'
+ _PTR   _EXFUN(memcpy,(_PTR __restrict, const _PTR __restrict, size_t));
+        ^
+../src/main.c:419:11: warning: passing argument 1 of 'memset' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+    memset(&rx_buffer[0] ,0, rx_head);
+           ^
+In file included from d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\ctype.h:4:0,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include/sleep.h:52,
+                 from ../src/main.h:4,
+                 from ../src/main.c:29:
+d:\app\vivado-xilinx\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:25:7: note: expected 'void *' but argument is of type 'volatile u8 * {aka volatile unsigned char *}'
+ _PTR  _EXFUN(memset,(_PTR, int, size_t));
+       ^
+../src/main.c: In function 'Angle_Sensor_processing_thread':
+../src/main.c:444:42: warning: variable 'Yaw' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                                          ^~~
+../src/main.c:444:36: warning: variable 'Pitch' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                                    ^~~~~
+../src/main.c:444:31: warning: variable 'Roll' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                               ^~~~
+../src/main.c:444:28: warning: variable 'Wz' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                            ^~
+../src/main.c:444:25: warning: variable 'Wy' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                         ^~
+../src/main.c:444:22: warning: variable 'Wx' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                      ^~
+../src/main.c:444:20: warning: variable 'T' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                    ^
+../src/main.c:444:17: warning: variable 'Az' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+                 ^~
+../src/main.c:444:14: warning: variable 'Ay' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+              ^~
+../src/main.c:444:11: warning: variable 'Ax' set but not used [-Wunused-but-set-variable]
+     float Ax,Ay,Az,T,Wx,Wy,Wz,Roll,Pitch,Yaw;
+           ^~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ssd1309_spi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ssd1309_spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ssd1309_spi.d" -MT"src/ssd1309_spi.o" -o "src/ssd1309_spi.o" "../src/ssd1309_spi.c"
+'Finished building: ../src/ssd1309_spi.c'
+' '
+'Building target: Mini_ctrl_brd_zynq_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq_1.elf"  ./src/Angle_Sensor.o ./src/Lwip_Receive.o ./src/TTC_timer_intr.o ./src/am2302.o ./src/bram.o ./src/freertos_tcp_perf_server.o ./src/iic_phyreset.o ./src/led.o ./src/main.o ./src/ssd1309_spi.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Mini_ctrl_brd_zynq_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Mini_ctrl_brd_zynq_1.elf  |tee "Mini_ctrl_brd_zynq_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 296480	   3528	32626976	32926984	1f66d08	Mini_ctrl_brd_zynq_1.elf
+'Finished building: Mini_ctrl_brd_zynq_1.elf.size'
+' '
+
+17:56:21 Build Finished (took 2s.51ms)
+

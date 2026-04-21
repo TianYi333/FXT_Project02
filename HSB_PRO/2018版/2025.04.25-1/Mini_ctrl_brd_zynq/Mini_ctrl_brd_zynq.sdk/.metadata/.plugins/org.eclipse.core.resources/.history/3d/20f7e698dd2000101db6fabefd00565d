@@ -1,0 +1,69 @@
+
+#include "Angle_Sensor.h"
+
+// 全局变量
+XUartPs UartPs;              // UART控制器实例
+XUartPs_Config *UartConfig;  // UART配置结构体
+
+
+int uart_init() {
+    int status;
+
+    // 1. 查找UART配置
+    UartConfig = XUartPs_LookupConfig(UART_DEVICE_ID);
+    if (UartConfig == NULL) {
+        xil_printf("Error: UART config lookup failed\n");
+        return XST_FAILURE;
+    }
+
+    // 2. 初始化控制器
+    status = XUartPs_CfgInitialize(&UartPs, UartConfig, UartConfig->BaseAddress);
+    if (status != XST_SUCCESS) {
+        xil_printf("Error: UART initialization failed\n");
+        return status;
+    }
+
+    // 3. 自检（可选）
+    status = XUartPs_SelfTest(&UartPs);
+    if (status != XST_SUCCESS) {
+        xil_printf("Error: UART self-test failed\n");
+        return status;
+    }
+
+    //设置工作模式:正常模式
+    XUartPs_SetOperMode(&UartPs, XUARTPS_OPER_MODE_NORMAL);
+    // 4. 设置波特率与数据格式
+    XUartPs_SetBaudRate(&UartPs, UART_BAUDRATE);
+    XUartPs_SetDataFormat(&UartPs, XUARTPS_FORMAT_8_BITS,
+                         XUARTPS_FORMAT_NO_PARITY, XUARTPS_FORMAT_1_STOP_BIT);
+
+    xil_printf("UART1 (EMIO) initialized at %d baud\n", UART_BAUDRATE);
+    return XST_SUCCESS;
+}
+
+// 发送字符串
+void uart_send(const char *data) {
+    u32 sent_bytes = 0;
+    u32 len = strlen(data);
+
+    sent_bytes = XUartPs_Send(&UartPs, (u8*)data, len);
+    if (sent_bytes != len) {
+        xil_printf("Warning: Sent %d/%d bytes\n", sent_bytes, len);
+    }
+}
+
+// 接收数据（阻塞模式）
+int uart_receive(u8 *buffer, u32 expect_len) {
+    u32 recv_bytes = 0;
+    u32 total_bytes = 0;
+
+    while (total_bytes < expect_len) {
+        recv_bytes = XUartPs_Recv(&UartPs, buffer + total_bytes, expect_len - total_bytes);
+        if (recv_bytes == 0) {  // 超时或无数据
+            xil_printf("Timeout waiting for data\n");
+            return total_bytes;
+        }
+        total_bytes += recv_bytes;
+    }
+    return total_bytes;
+}

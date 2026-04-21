@@ -1,0 +1,10 @@
+#include "timer_intr.h"
+
+/**** 全局变量 ****/
+XScuTimer TimerInstance;
+XScuGic InterruptController;
+static volatile uint32_t usElapsed = 0; // 累计微秒数
+static uint32_t timerFreq;              // 定时器实际频率
+static uint32_t loadValue;              // 自动重载值
+
+

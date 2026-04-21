@@ -1,0 +1,2957 @@
+!SESSION 2025-09-04 09:43:36.913 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\.metadata\.bak_0.log
+Created Time: 2025-09-04 10:15:59.574
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.574
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.578
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"Pro_FPGA_ctrl_0": {"hier_name": "Pro_FPGA_ctrl_0",
+"type": "Pro_FPGA_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_125M": {"hier_name": "rst_ps7_0_125M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_1": {"hier_name": "ps7_sd_1",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ttc_0": {"hier_name": "ps7_ttc_0",
+"type": "ps7_ttc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.580
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.582
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, lwip211 xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.582
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.584
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, {"lwip211": "1.5",
+"xilffs": "4.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.776
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.779
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, {"Pro_FPGA_ctrl_0": {"name": "Pro_FPGA_ctrl",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.14",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.9",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.5",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.3",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ttc_0": {"name": "ttcps",
+"ver": "3.14",
+},
+"ps7_uart_0": {"name": "uartps",
+"ver": "3.11",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"ps7_sd_1": {"name": "sdps",
+"ver": "3.12",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.786
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:15:59.787
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Result: [null, Pro_FPGA_ctrl_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_1 ps7_slcr_0 ps7_ttc_0 ps7_uart_0 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:16.672
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:16.806
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:22.247
+!MESSAGE XSCT Command: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Thread: Worker-17: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:24.048
+!MESSAGE XSCT command with result: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Result: [null, ]. Thread: Worker-17: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:25.170
+!MESSAGE XSCT Command: [platform read {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\platform.spr}], Thread: Worker-18: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:16:26.200
+!MESSAGE XSCT command with result: [platform read {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\platform.spr}], Result: [null, ]. Thread: Worker-18: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:45.393
+!MESSAGE XSCT Command: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Thread: Worker-21: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:47.190
+!MESSAGE XSCT command with result: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Result: [null, ]. Thread: Worker-21: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:48.390
+!MESSAGE XSCT Command: [platform read {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\platform.spr}], Thread: Worker-24: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:48.390
+!MESSAGE XSCT Command: [::hsi::utils::closehw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-22: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:49.471
+!MESSAGE XSCT command with result: [platform read {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\platform.spr}], Result: [null, ]. Thread: Worker-24: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:49.481
+!MESSAGE XSCT command with result: [::hsi::utils::closehw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-22: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:49.482
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-22: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:50.304
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-22: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.203
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.204
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa]. Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.204
+!MESSAGE XSCT Command: [::scw::regenerate_psinit D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.205
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.205
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.265
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss]. Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.265
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss ], Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.267
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss ], Result: [null, ]. Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.267
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.269
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-26: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.292
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.293
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Result: [null, Pro_FPGA_ctrl_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_1 ps7_slcr_0 ps7_ttc_0 ps7_uart_0 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.293
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.296
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, {"Pro_FPGA_ctrl_0": {"name": "Pro_FPGA_ctrl",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.14",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.9",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.5",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.3",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.0",
+},
+"ps7_ttc_0": {"name": "ttcps",
+"ver": "3.14",
+},
+"ps7_uart_0": {"name": "uartps",
+"ver": "3.11",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"ps7_sd_1": {"name": "sdps",
+"ver": "3.12",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.296
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.298
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.298
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.299
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.300
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.301
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.301
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.302
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.303
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.304
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.304
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.305
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.306
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.307
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.307
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.309
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.309
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.310
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.311
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.312
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.312
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.314
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.314
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.315
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.315
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.317
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.317
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.318
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.319
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.320
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.320
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.322
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.322
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.323
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.324
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.325
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.325
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.327
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.327
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.328
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.328
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.330
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.330
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.331
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.331
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.333
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.333
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.334
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.334
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.336
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.336
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.337
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.337
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.339
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.339
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.340
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.341
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.342
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.342
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.343
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.344
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.345
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.345
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.346
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.346
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.348
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.348
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.349
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.349
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.351
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.351
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.352
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "generic" && VERSION == "3.0"  && TYPE == "DRIVER"}]], Result: [null, E:/Xilinx2021/Vitis/2021.1/data/embeddedsw\XilinxProcessorIPLib\drivers\generic_v3_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.374
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.375
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, lwip211 xilffs]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.376
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.377
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss], Result: [null, {"lwip211": "1.5",
+"xilffs": "4.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.388
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:53.517
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:55.312
+!MESSAGE XSCT Command: [bsp regenerate], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:54:56.080
+!MESSAGE XSCT command with result: [bsp regenerate], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:55:04.218
+!MESSAGE XSCT Command: [platform read {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/platform.spr}], Thread: Worker-22: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:55:05.298
+!MESSAGE XSCT command with result: [platform read {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/platform.spr}], Result: [null, ]. Thread: Worker-22: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:55:08.186
+!MESSAGE XSCT Command: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Thread: Worker-22: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:55:09.760
+!MESSAGE XSCT command with result: [platform config -updatehw {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper.xsa}], Result: [null, ]. Thread: Worker-22: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:57:00.895
+!MESSAGE XSCT Command: [platform read {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\platform.spr}], Thread: Worker-23: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 10:57:03.610
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-22: Initializing 'freertos10_xilinx_ps7_cortexa9_0' bsp settings UI...
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-09-04 11:18:25.179
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.xilinx.sdx.scw.util.ScwTclCmdHelper$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-09-04 11:18:25.180
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.core.runtime.jobs.Job$2
+!SESSION 2025-09-04 11:18:34.219 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-09-04 11:18:40.441
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-04 11:18:42.562
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-04 11:18:42.562
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-09-04 11:18:42.563
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.633
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.634
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.651
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.652
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.653
+!MESSAGE XSCT Command: [setws D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.655
+!MESSAGE XSCT command with result: [setws D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:43.860
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:44.110
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:44.111
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:18:44.112
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, E:/Xilinx2021/Vitis/2021.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:26.330
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.057
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.061
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.064
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.065
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.067
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:19:27.067
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.070
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:27.071
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.012
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.013
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.015
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq\_ide\bitstream}], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.045
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq\_ide\bitstream}], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.046
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.048
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Thu Sep  4 10:09:08 2025",
+"vivado_version": "2021.1",
+"part": "xc7z020clg400-2",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:36.049
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq\_ide\psinit} -quiet], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:38.432
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq\_ide\psinit} -quiet], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:38.440
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:19:38.445
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"Pro_FPGA_ctrl_0": {"hier_name": "Pro_FPGA_ctrl_0",
+"type": "Pro_FPGA_ctrl",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_125M": {"hier_name": "rst_ps7_0_125M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_1": {"hier_name": "ps7_sd_1",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ttc_0": {"hier_name": "ps7_ttc_0",
+"type": "ps7_ttc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.135
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "125",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.138
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.141
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Result: [null, {"Pro_FPGA_ctrl_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_1": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.142
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.148
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Result: [null, {"Pro_FPGA_ctrl_0_S00_AXI": {"name": "Pro_FPGA_ctrl_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_1": {"name": "ps7_sd_1",
+"base": "0xE0101000",
+"high": "0xE0101FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.149
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.150
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.151
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.161
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.162
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.163
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.163
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.177
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.191
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.192
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.193
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.194
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.206
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.207
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.211
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1], Result: [null, {"Pro_FPGA_ctrl_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_1": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.211
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.217
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1], Result: [null, {"Pro_FPGA_ctrl_0_S00_AXI": {"name": "Pro_FPGA_ctrl_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_1": {"name": "ps7_sd_1",
+"base": "0xE0101000",
+"high": "0xE0101FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.218
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.219
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.219
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.236
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.237
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.238
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.238
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.240
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.241
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.241
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.252
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.254
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.255
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa ps7_cortexa9_0], Result: [null, Pro_FPGA_ctrl_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_1 ps7_slcr_0 ps7_ttc_0 ps7_uart_0 ps7_xadc_0]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.256
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa bit], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.257
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa bit], Result: [null, system_wrapper.bit]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:22.267
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:21:24.621
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:21:24.621
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.670
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.671
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.904
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.904
+!MESSAGE XSCT Command: [version -server], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.906
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.922
+!MESSAGE XSCT Command: [version], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.923
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.926
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.936
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.937
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.944
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.947
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.950
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.950
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.957
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.958
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.961
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.961
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.969
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.970
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.973
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.974
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.980
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.981
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.984
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.992
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.992
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.995
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248764166]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:24.995
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.002
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.003
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.010
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.011
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.011
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.012
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.032
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.032
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.121
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:25.121
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.134
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.154
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.156
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.156
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.164
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.168
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.169
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.169
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.172
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.172
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.173
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.173
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.176
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.176
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.183
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.184
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.184
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Zed-210248764166-4ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.186
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.187
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-Zed-210248764166-23727093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.189
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.210
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:28.210
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.529
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.548
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.553
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.554
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.574
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_0]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.575
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.575
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.576
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.593
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.593
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.594
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.595
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.849
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.849
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.853
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.854
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.858
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:30.858
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.505
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.506
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.531
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.623
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.679
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.680
+!MESSAGE XSCT Command: [con], Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:21:31.709
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-3: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:38.955
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-131
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:38.958
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-131
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.379
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.382
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.383
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.507
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.508
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.509
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.509
+!MESSAGE XSCT Command: [version], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.510
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.510
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.513
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.513
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.521
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.522
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.524
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.524
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.531
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.532
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.534
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.535
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.543
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.543
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.546
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.546
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.555
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.555
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.558
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.558
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.565
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.565
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.568
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.568
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.576
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.576
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.584
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.585
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.585
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.586
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.590
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.590
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.678
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:45.679
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.683
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.692
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.695
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.696
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.704
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.705
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.719
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:48.719
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.034
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.047
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.052
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.052
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.056
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_0]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.056
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.057
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.057
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.063
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.064
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.065
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.065
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.250
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.250
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.253
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.253
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.258
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.259
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.916
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.916
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:51.941
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:52.007
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:52.019
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:52.019
+!MESSAGE XSCT Command: [con], Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:26:52.054
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-12: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.689
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.693
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.693
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.695
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:39:38.695
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.697
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:38.698
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:39.466
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-311
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:39.468
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-311
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.799
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.802
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.802
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.940
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.941
+!MESSAGE XSCT Command: [version -server], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.943
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.943
+!MESSAGE XSCT Command: [version], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.943
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.944
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.946
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.946
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.955
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.955
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.958
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.958
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.966
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.966
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.969
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.969
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.976
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.977
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.980
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.980
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.988
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.988
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.991
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.991
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.998
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:45.998
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.001
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.001
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.009
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.010
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.017
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248764166" && level == 0}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.017
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.018
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.018
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.022
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.022
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.108
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:46.109
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.115
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.130
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.134
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248764166]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.134
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.141
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.142
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.157
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:49.158
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.471
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.498
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.499
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.503
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_0]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.503
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.503
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.504
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.508
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.508
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.509
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.510
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.689
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.689
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.692
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.693
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.697
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:51.698
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.336
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.336
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.360
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.402
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.415
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.416
+!MESSAGE XSCT Command: [con], Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:39:52.463
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-22: Launching Debugger_Mini_ctrl_brd_zynq-Default_5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:41.440
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-377
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:41.442
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-377
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.147
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.150
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.150
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.152
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:40:44.152
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.153
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-09-04 11:40:44.154
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:42:19.728
+!MESSAGE Opening file dialog using preferences. Current path: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq_system\_ide\bootimage, Local preference: bootgen_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:42:33.389
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: soc_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:42:33.389
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-09-04 11:42:33.390
+!MESSAGE Workspace path used is: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Vitis
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:42.897
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:42.897
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:42.898
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:45.322
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:45.323
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-09-04 11:42:45.323
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)

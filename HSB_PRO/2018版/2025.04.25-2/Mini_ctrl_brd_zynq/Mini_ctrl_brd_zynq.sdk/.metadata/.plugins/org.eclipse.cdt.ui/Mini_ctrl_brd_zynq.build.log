@@ -1,0 +1,17 @@
+10:31:35 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Angle_Sensor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Angle_Sensor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Angle_Sensor.d" -MT"src/Angle_Sensor.o" -o "src/Angle_Sensor.o" "../src/Angle_Sensor.c"
+In file included from ../src/Angle_Sensor.h:4:0,
+                 from ../src/Angle_Sensor.c:2:
+../src/main.h:4:10: fatal error: sleep.h: No such file or directory
+ #include <sleep.h>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:44: src/Angle_Sensor.o] Error 1
+
+10:31:36 Build Finished (took 220ms)
+

@@ -1,0 +1,29 @@
+#ifndef SRC_ANGLE_SENSOR_H_
+#define SRC_ANGLE_SENSOR_H_
+
+#include "main.h"
+#include <stdio.h>
+#include "xparameters.h"    // 硬件参数头文件
+#include "xuartps.h"        // Xilinx UART驱动库
+#include "xil_printf.h"     // 调试输出库
+
+// 全局变量
+extern XUartPs UartPs;              // UART控制器实例
+extern XUartPs_Config *UartConfig;  // UART配置结构体
+
+#ifndef XPAR_XUARTPS_1_DEVICE_ID
+#define XPAR_XUARTPS_1_DEVICE_ID    1                   // 设备ID
+#define XPAR_XUARTPS_1_BASEADDR     0xE0001000          // 寄存器基地址
+#define XPAR_XUARTPS_1_HIGHADDR     0xE0001FFF
+#define XPAR_XUARTPS_1_UART_CLK_FREQ_HZ     50000000            // 时钟频率（需与Vivado配置一致）
+#endif
+
+#define UART_DEVICE_ID      XPAR_XUARTPS_0_DEVICE_ID  // UART1设备ID（对应EMIO）
+#define UART_BAUDRATE       115200                    // 波特率
+#define BUFFER_SIZE         64                        // 收发缓冲区大小
+
+int uart_init();
+void uart_send(const char *data);
+int uart_receive(u8 *buffer, u32 expect_len);
+
+#endif /* SRC_ANGLE_SENSOR_H_ */

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  7 09:05:49 2025
+# Process ID: 84976
+# Current directory: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent76568 D:\ASUS-PC\Desktop\temporary\test\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr
+# Log file: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/vivado.log
+# Journal file: D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd}
+ipx::edit_ip_in_project -upgrade true -name pl_bram_rd_v1_0_project -directory D:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.tmp/pl_bram_rd_v1_0_project d:/ASUS-PC/Desktop/temporary/test/Mini_ctrl_brd_zynq/ip_repo/pl_bram_rd_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project

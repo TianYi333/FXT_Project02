@@ -1,0 +1,35 @@
+#ifndef SRC_SSD1309_SPI_H_
+#define SRC_SSD1309_SPI_H_
+
+#include "main.h"
+
+#ifndef SSD1309_SPI_H
+#define SSD1309_SPI_H
+
+
+// 引脚定义（根据Vivado中的EMIO编号修改）
+#define PIN_DIN  0  // MOSI (模拟SPI数据线)
+#define PIN_CLK  1  // SCLK (模拟SPI时钟线)
+#define PIN_CS   2  // 片选
+#define PIN_DC   3  // 数据/命令选择
+#define PIN_RES  4  // 复位
+
+// 屏幕参数
+#define SSD1309_WIDTH   128
+#define SSD1309_HEIGHT  64
+#define SSD1309_PAGES   8
+
+// GPIO实例全局变量
+extern XGpio gpio;
+
+// 函数声明
+void SPI_Init(void);
+void SSD1309_Init(void);
+void SSD1309_Clear(void);
+void SSD1309_Update(void);
+void SSD1309_DrawPixel(int x, int y, int color);
+void SSD1309_TestPattern(void);
+
+#endif
+
+#endif /* SRC_SSD1309_SPI_H_ */

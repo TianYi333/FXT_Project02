@@ -1,0 +1,111 @@
+/*
+ * am2302_driver.c
+ *
+ *  Created on: 2025年4月23日
+ *      Author: ASUS-PC
+ */
+
+#include "am2302_driver.h"
+
+static const uint32_t us_per_tick = portTICK_PERIOD_MS * 1000;
+
+// 时序关键函数
+__attribute__((optimize("O0"))) void AM2302_Delay(uint32_t us) {
+    volatile uint32_t cycles = us * (XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 3000000);
+    while(cycles--);
+}
+
+static void set_bus_output(void) {
+	XGpioPs_WritePin(&gpiops_inst, EMIO1_PIN_DIR, 1);//DIR低电平，B->A;DIR高电平，A->B
+    XGpioPs_SetDirectionPin(&gpiops_inst, AM2302_PIN, 1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, AM2302_PIN, 1);
+}
+
+static void set_bus_input(void) {
+	XGpioPs_WritePin(&gpiops_inst, EMIO1_PIN_DIR, 0);//DIR低电平，B->A;DIR高电平，A->B
+    XGpioPs_SetDirectionPin(&gpiops_inst, AM2302_PIN, 0);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, AM2302_PIN, 0);
+}
+
+void AM2302_Init(void) {
+    set_bus_output();
+    XGpioPs_WritePin(&gpiops_inst, AM2302_PIN, 1);
+    AM2302_Delay(2000); // 上电稳定等待
+}
+
+static BaseType_t read_bit(uint32_t *duration) {
+    TickType_t start = xTaskGetTickCount();
+    while(!XGpioPs_ReadPin(&gpiops_inst, AM2302_PIN)) {
+        if((xTaskGetTickCount() - start) * us_per_tick > 100)
+            return pdFAIL;
+    }
+
+    uint32_t high_start = xTaskGetTickCount();
+    while(XGpioPs_ReadPin(&gpiops_inst, AM2302_PIN)) {
+        if((xTaskGetTickCount() - high_start) * us_per_tick > 100)
+            return pdFAIL;
+    }
+
+    *duration = (xTaskGetTickCount() - high_start) * us_per_tick;
+    return pdTRUE;
+}
+
+BaseType_t AM2302_Read(AM2302_Data_t *result) {
+    uint8_t data[5] = {0};
+    uint32_t raw_data = 0;
+    TickType_t start = xTaskGetTickCount();
+    for(int retry = 0; retry < RETRY_MAX; retry++) {
+        // 启动信号
+        set_bus_output();
+        XGpioPs_WritePin(&gpiops_inst, AM2302_PIN, 0);
+        AM2302_Delay(1000);
+
+        // 释放总线
+        set_bus_input();
+        AM2302_Delay(30);
+
+        // 等待从机响应
+        if(XGpioPs_ReadPin(&gpiops_inst, AM2302_PIN)) continue;
+        AM2302_Delay(80);
+        if(!XGpioPs_ReadPin(&gpiops_inst, AM2302_PIN)) continue;
+        AM2302_Delay(80);
+
+        // 读取40位数据
+        for(int i=0; i<DATA_BITS; i++) {
+            uint32_t high_start = xTaskGetTickCount();
+                while(XGpioPs_ReadPin(&gpiops_inst, AM2302_PIN)) {
+                    if((xTaskGetTickCount() - high_start) * us_per_tick > 100)
+                        return pdFAIL;
+                }
+
+            raw_data <<= 1;
+            Bus_DelayUs(40);
+            raw_data |= 1;
+
+            if(i == 39) {
+                if(raw_data != (data[0]+data[1]+data[2]+data[3])) {
+                    //xQueueSend(am2302_error_queue, xTaskGetTickCount(), 0);
+                    break;
+                }
+            } else if((i+1)%8 == 0) {
+                data[i/8] = (raw_data & 0xFF);
+                raw_data = 0;
+            }
+        }
+
+        // 数据转换
+        result->humidity = (data[0] * 256 + data[1]) / 10.0;
+        result->temperature = (data[2] * 256 + data[3]) / 10.0;
+        result->timestamp = xTaskGetTickCount();
+
+        // 校验范围合理性
+        if(result->humidity > 100 || result->temperature < -40 || result->temperature > 80) {
+            continue;
+        }
+
+        return pdTRUE;
+    }
+
+    return pdFAIL;
+}
+

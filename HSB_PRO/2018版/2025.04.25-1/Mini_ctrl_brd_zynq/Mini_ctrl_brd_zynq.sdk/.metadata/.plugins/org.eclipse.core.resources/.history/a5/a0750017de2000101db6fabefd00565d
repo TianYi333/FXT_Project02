@@ -1,0 +1,91 @@
+
+#include "Angle_Sensor.h"
+
+// 全局变量
+XUartPs UartCtrl;           // UART控制器实例
+XScuGic IntcCtrl;           // 中断控制器实例
+
+volatile u8 rx_buffer[BUFFER_SIZE];  // 中断接收缓冲区
+volatile u32 rx_head = 0;    // 缓冲区写入指针
+volatile u32 rx_tail = 0;    // 缓冲区读取指针
+volatile u8 data_ready = 0;  // 数据就绪标志
+
+void UART_IRQ_Handler(void *Instance) {
+    XUartPs *UartInst = (XUartPs *)Instance;
+    u32 IntrStatus;
+
+    // 1. 获取中断状态并清除标志
+    IntrStatus = XUartPs_ReadReg(UartInst->BaseAddress, XUARTPS_IMR_OFFSET) &
+                 XUartPs_ReadReg(UartInst->BaseAddress, XUARTPS_ISR_OFFSET);
+    XUartPs_WriteReg(UartInst->BaseAddress, XUARTPS_ISR_OFFSET, IntrStatus);
+
+    // 2. 处理接收中断
+    if (IntrStatus & (XUARTPS_IXR_RXTRIG | XUARTPS_IXR_RXOVR)) {
+        while (XUartPs_IsReceiveData(UartInst->BaseAddress)) {
+            // 写入环形缓冲区
+            rx_buffer[rx_head] = XUartPs_ReadReg(UartInst->BaseAddress, XUARTPS_FIFO_OFFSET);
+            rx_head = (rx_head + 1) % BUFFER_SIZE;
+            if (rx_head == rx_tail) {  // 缓冲区溢出处理
+                rx_tail = (rx_tail + 1) % BUFFER_SIZE;
+                xil_printf("Warning: Buffer overflow!\n");
+            }
+            data_ready = 1;  // 设置数据就绪标志
+        }
+    }
+}
+
+// UART控制器初始化
+int UART_Init() {
+    XUartPs_Config *UartCfg;
+
+    // 1. 查找并加载配置
+    if ((UartCfg = XUartPs_LookupConfig(UART_DEVICE_ID)) == NULL) {
+        xil_printf("ERROR: UART config not found\n");
+        return XST_FAILURE;
+    }
+
+    // 2. 初始化控制器
+    if (XUartPs_CfgInitialize(&UartCtrl, UartCfg, UartCfg->BaseAddress) != XST_SUCCESS) {
+        xil_printf("ERROR: UART init failed\n");
+        return XST_FAILURE;
+    }
+
+    // 3. 配置波特率与格式
+    XUartPs_SetBaudRate(&UartCtrl, 115200);
+    XUartPs_SetDataFormat(&UartCtrl, XUARTPS_FORMAT_8_BITS,
+                         XUARTPS_FORMAT_NO_PARITY, XUARTPS_FORMAT_1_STOP_BIT);
+
+    // 4. 设置FIFO阈值
+    XUartPs_SetFifoThreshold(&UartCtrl, RX_TRIGGER_LEVEL);
+    return XST_SUCCESS;
+}
+
+// 中断系统初始化
+int Interrupt_Init() {
+    XScuGic_Config *IntcCfg;
+
+    // 1. 初始化GIC
+    if ((IntcCfg = XScuGic_LookupConfig(INTC_DEVICE_ID)) == NULL) {
+        xil_printf("ERROR: GIC config not found\n");
+        return XST_FAILURE;
+    }
+    if (XScuGic_CfgInitialize(&IntcCtrl, IntcCfg, IntcCfg->CpuBaseAddress) != XST_SUCCESS) {
+        xil_printf("ERROR: GIC init failed\n");
+        return XST_FAILURE;
+    }
+
+    // 2. 注册中断服务程序
+    XScuGic_SetPriorityTriggerType(&IntcCtrl, UART_INT_IRQ_ID, 0xA0, 0x3);
+    if (XScuGic_Connect(&IntcCtrl, UART_INT_IRQ_ID,
+                       (Xil_ExceptionHandler)UART_IRQ_Handler,
+                       (void *)&UartCtrl) != XST_SUCCESS) {
+        xil_printf("ERROR: IRQ connect failed\n");
+        return XST_FAILURE;
+    }
+
+    // 3. 启用中断
+    XScuGic_Enable(&IntcCtrl, UART_INT_IRQ_ID);
+    XUartPs_SetInterruptMask(&UartCtrl, XUARTPS_IXR_RXTRIG | XUARTPS_IXR_RXOVR);
+    Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+    return XST_SUCCESS;
+}

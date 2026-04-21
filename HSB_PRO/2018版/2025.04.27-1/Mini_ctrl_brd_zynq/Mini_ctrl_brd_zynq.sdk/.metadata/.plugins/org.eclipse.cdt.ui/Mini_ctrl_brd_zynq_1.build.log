@@ -1,0 +1,26 @@
+14:54:58 **** Auto Build of configuration Debug for project Mini_ctrl_brd_zynq_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:76:13: warning: 'assign_default_ip' defined but not used [-Wunused-function]
+ static void assign_default_ip(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw)
+             ^~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Mini_ctrl_brd_zynq_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mini_ctrl_brd_zynq_1_bsp/ps7_cortexa9_0/lib -o "Mini_ctrl_brd_zynq_1.elf"  ./src/Angle_Sensor.o ./src/am2302.o ./src/freertos_tcp_perf_server.o ./src/iic_phyreset.o ./src/main.o ./src/oled.o ./src/ssd1309_spi.o ./src/timer_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: Mini_ctrl_brd_zynq_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Mini_ctrl_brd_zynq_1.elf  |tee "Mini_ctrl_brd_zynq_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 240220	   3488	32627008	32870716	1f5913c	Mini_ctrl_brd_zynq_1.elf
+'Finished building: Mini_ctrl_brd_zynq_1.elf.size'
+' '
+
+14:54:58 Build Finished (took 523ms)
+

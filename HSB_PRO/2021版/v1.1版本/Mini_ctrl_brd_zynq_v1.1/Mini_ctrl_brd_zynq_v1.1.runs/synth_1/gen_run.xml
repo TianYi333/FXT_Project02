@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1748484540">
+  <File Type="PA-TCL" Name="system_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="system_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="system_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="system_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_hex_2_dec/div_gen_hex_2_dec.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/ip/div_gen_hex_2_dec/div_gen_hex_2_dec.xci"/>
+        <Attr Name="ImportTime" Val="1748421049"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci"/>
+        <Attr Name="ImportTime" Val="1748421039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1748421060"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/Biss_c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/Biss_c.vhd"/>
+        <Attr Name="ImportTime" Val="1747373866"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/UART.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/UART.vhd"/>
+        <Attr Name="ImportTime" Val="1702630504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/VERSION_CHECK.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/VERSION_CHECK.vhd"/>
+        <Attr Name="ImportTime" Val="1748482110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/d_ram_ssd1309.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/d_ram_ssd1309.vhd"/>
+        <Attr Name="ImportTime" Val="1694593446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_AM2302.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_AM2302.vhd"/>
+        <Attr Name="ImportTime" Val="1693916118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_J.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_J.vhd"/>
+        <Attr Name="ImportTime" Val="1708744084"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_am2302_check.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_am2302_check.vhd"/>
+        <Attr Name="ImportTime" Val="1711510400"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_d_ram_ssd1309.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_d_ram_ssd1309.vhd"/>
+        <Attr Name="ImportTime" Val="1748482094"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_dec_2_rom_addr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_dec_2_rom_addr.vhd"/>
+        <Attr Name="ImportTime" Val="1708327796"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_dec_2_rom_addr_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_dec_2_rom_addr_1.vhd"/>
+        <Attr Name="ImportTime" Val="1708395530"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_display_am2302.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_display_am2302.vhd"/>
+        <Attr Name="ImportTime" Val="1708395576"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_display_gy_25.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_display_gy_25.vhd"/>
+        <Attr Name="ImportTime" Val="1708334284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_hex_2_dec.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_hex_2_dec.vhd"/>
+        <Attr Name="ImportTime" Val="1708327676"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_hex_2_dec_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_hex_2_dec_1.vhd"/>
+        <Attr Name="ImportTime" Val="1708395440"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_servo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_servo.vhd"/>
+        <Attr Name="ImportTime" Val="1747363521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/fun_ssd1309.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/fun_ssd1309.vhd"/>
+        <Attr Name="ImportTime" Val="1694998874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/led_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/led_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1714287842"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/servo_rx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/servo_rx.vhd"/>
+        <Attr Name="ImportTime" Val="1748413198"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/servo_tx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/servo_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1693811718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/spi_gen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/spi_gen.vhd"/>
+        <Attr Name="ImportTime" Val="1694393460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/TOP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/TOP.vhd"/>
+        <Attr Name="ImportTime" Val="1748421352"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/sources_1/bd/system/system.bd"/>
+        <Attr Name="ImportTime" Val="1748483321"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.gen/sources_1/bd/system/hdl/system_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1748482641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_TOP/coe_file/angle_c.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/VHDL_TOP/coe_file/angle_c.coe"/>
+        <Attr Name="ImportTime" Val="1748403615"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="system_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/const1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/FPGA/Mini_ctrl_brd_zynq_v1.1/Mini_ctrl_brd_zynq_v1.1.srcs/constrs_1/new/const1.xdc"/>
+        <Attr Name="ImportTime" Val="1748423637"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
